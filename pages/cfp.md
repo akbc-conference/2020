@@ -50,10 +50,26 @@ Topics of interest include, but are not limited to:
 Authors of accepted papers will have the option for their conference paper to be archival (with full text in AKBC Proceedings, and be considered for best paper awards) or non-archival (listed in AKBC Conference schedule, with full text in OpenReview, and the flexibility to also submit elsewhere).  Double-blind reviewing will be performed on the OpenReview platform, with papers, reviews and comments publicly visible, much like ICLR 2020.
 
 Papers should be restricted to 10 pages excluding references (the equivalent of about 8 pages double column).
+Appendices can be included beyond the references in the same PDF file, but may be ignored by the reviewers.
 
+We will follow a double-blind review process, and thus the submissions should not have any identifiable information about the authors.
+This includes not only the authors on the first page, but also any other information that betrays the identity, such as using first person pronouns when self-citing, URLs that include name of the authors/organization, etc.
+These restrictions apply to the appendices as well.
+
+All submissions must be formatted with LaTeX using the following LaTeX source: [akbc-latex.zip](https://github.com/akbc-conference/style-files/blob/master/akbc-latex.zip?raw=true)
+
+For submission, do not include the `\finalcopy` flag.
+
+Note that submissions will be made publicly available immediately after the submission deadline (see the review process for more details).
 
 ### Submission Site: [http://www.akbc.ws/2020/submission](http://www.akbc.ws/2020/submission)
 
+### Reviewing Process
+
+We are following an open reviewing paradigm that solicits public discussion of the reviews, and allows authors to submit revisions that address reviewer comments, before decisions are made.
+The contents of all reviews will be public and generally visible to users logged into <a href="https://www.openreview.net">OpenReview.net</a>.
+The contents of submitted reviews are not visible by reviewers who have not submitted their own reviews.
+Reviewer names are only visible to the area chairs (and are *not* visible to the public, other reviewers, or the authors).
 
 ###  Dual Submission Policy
 
