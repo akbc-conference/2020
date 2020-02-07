@@ -22,10 +22,21 @@ Nearly ten years after the first AKBC workshop in Grenoble, France, AKBC has bec
 
 ## Latest news
 
+<div style="background-color:#70c950; border-radius: 25px; padding: 20px;">
+<span style="color:white">
+<b>Feb 2020 :</b><br />
+AKBC organizers are pleased to announce that we’re opening up the abstract deadline for paper submissions to February 13;  due to more efficient reviewer matching, we can now handle a compressed paper assignment schedule.  The paper deadline is still February 13, as announced earlier;  however, if you did not submit an abstract before February 6, you can continue doing so until the aforementioned paper deadline.
+</span>
+</div>
+
+<div style="padding: 20px;" markdown="1">
+
 Jan 2020 : [Submission Site]({{ site.baseurl }}/submission) is live<br />
 Jan 2020 : [LaTeX Style Files](https://github.com/akbc-conference/style-files/blob/master/akbc-latex.zip?raw=true) updated<br />
 Nov 2019 : [Call for Workshop Proposals]({{ site.baseurl }}/cfw) released <br />
 Sep 2019 : [Call for Papers]({{ site.baseurl }}/cfp) released <br />
+
+</div>
 
 <a name="dates"></a>
 
@@ -33,8 +44,8 @@ Sep 2019 : [Call for Papers]({{ site.baseurl }}/cfp) released <br />
 
 <br />
 ~~December 18, 2020, Wednesday: Workshop proposals due (Midnight PST)~~<br />
-**February 6, 2020, Thursday: Abstracts due (11:59pm PST)**<br />
-February 13, 2020, Thursday: Paper submission deadline (11:59pm PST)<br />
+~~February 6, 2020~~ **February 13, 2020, Thursday: Abstracts due (11:59pm PST)**<br />
+**February 13, 2020, Thursday: Paper submission deadline (11:59pm PST)**<br />
 April 20, 2020, Monday: Conference notification<br />
 June 22-23, 2020, Monday-Tuesday: Conference, UC Irvine, CA<br />
 June 24, 2020, Wednesday: Workshops, UC Irvine, CA<br />

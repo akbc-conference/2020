@@ -15,8 +15,8 @@ Email: [info@akbc.ws](mailto:info@akbc.ws)<br>
 
 
 ### Key dates
-**Abstract submission deadline: February 6. 2020** (11:59pm PST)<br>
-Paper submission deadline: February 13, 2020 (11:59pm PST)<br>
+**Abstract submission deadline: ~~February 6. 2020~~ February 13, 2020 (11:59pm PST)**<br>
+**Paper submission deadline: February 13, 2020 (11:59pm PST)**<br>
 Notification of acceptance: April 20, 2020<br>
 Conference & Workshop Dates: June 22-24, 2020<br>
 
