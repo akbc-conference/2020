@@ -2,7 +2,7 @@
 title: AKBC 2020
 layout: frontpage
 header:
-  image_fullwidth: "irvine-header.jpg"
+  image_fullwidth: "generic-gradient.png"
 ---
 
 <div style='border-radius: 25px; padding: 20px; background: #CD5C5C; color: #FFFFFF;'>

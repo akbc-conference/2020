@@ -4,12 +4,12 @@ layout: page-fullwidth
 order: 0
 permalink: /cfp/
 header:
-  image_fullwidth: "irvine-header.jpg"
+  image_fullwidth: "generic-gradient.png"
 ---
 
 
 **2nd Conference on Automated Knowledge Base Construction (AKBC)**<br>
-June 22-24, 2020, Monday-Wednesday, Irvine, CA<br>
+TBD, 2020<br>
 Homepage: [http://www.akbc.ws](http://akbc.ws)<br>
 Email: [info@akbc.ws](mailto:info@akbc.ws)<br>
 
@@ -49,8 +49,10 @@ Topics of interest include, but are not limited to:
 
 Authors of accepted papers will have the option for their conference paper to be archival (with full text in AKBC Proceedings, and be considered for best paper awards) or non-archival (listed in AKBC Conference schedule, with full text in OpenReview, and the flexibility to also submit elsewhere).  Double-blind reviewing will be performed on the OpenReview platform, with papers, reviews and comments publicly visible, much like ICLR 2020.
 
-Papers should be restricted to **10 pages** excluding references (the equivalent of about 6 pages double column).
+Papers should be restricted to 10 pages excluding references (the equivalent of about 6 pages double column) at time of submission.
 Appendices can be included beyond the references in the same PDF file, but may be ignored by the reviewers.
+
+**During discussion and after acceptance, the paper length can be extended to 11 pages**.
 
 We will follow a double-blind review process, and thus the submissions should not have any identifiable information about the authors.
 This includes not only the authors on the first page, but also any other information that betrays the identity, such as using first person pronouns when self-citing, URLs that include name of the authors/organization, etc.

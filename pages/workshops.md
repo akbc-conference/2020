@@ -3,7 +3,7 @@ title: Workshops
 layout: page-fullwidth
 permalink: /workshops/
 header:
-  image_fullwidth: "irvine-header.jpg"
+  image_fullwidth: "generic-gradient.png"
 ---
 
 <ul>

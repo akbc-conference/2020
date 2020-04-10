@@ -3,7 +3,7 @@ title: Travel
 layout: page-fullwidth
 permalink: /travel/
 header:
-  image_fullwidth: "irvine-header.jpg"
+  image_fullwidth: "generic-gradient.png"
 ---
 
 [Irvine](https://goo.gl/maps/auKoDNKL7Gh6p28X9) is a city in Southern California roughly located between Los Angeles (~50 miles; 1 hour drive) and San Diego (85 miles; 1.5 hour drive).

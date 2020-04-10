@@ -3,7 +3,7 @@ title: Organization
 layout: page-fullwidth
 permalink: /organization/
 header:
-  image_fullwidth: "irvine-header.jpg"
+  image_fullwidth: "generic-gradient.png"
 ---
 
 {% for organizer in site.data.organizers %}

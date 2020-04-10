@@ -38,10 +38,6 @@
   - title: "Venue"
     url: "/venue/"
     side: left
-  - title: "Travel"
-    url: "/travel/"
-    side: left
-
   # dropdown:
   #   - title: "Venue"
   #     url: "/venue/"
