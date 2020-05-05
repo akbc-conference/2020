@@ -5,9 +5,9 @@
   duration: Half-day
 
 - name: Knowledge Bases and Multiple Modalities
-  url: https://kb-mm.github.io
+  url: https://kb-mm-2020.github.io
   acronym: KBMM
-  organizers: Pouya Pezeshkpour, Anand Mishra, Partha Talukdar, Sameer Singh
+  organizers: Pouya Pezeshkpour, Anand Mishra, Alice Wang, Hugues Bouchard, Aasish Pappu, Partha Talukdar, Sameer Singh
   duration: Half-day
 
 - name: Structured and Unstructured KBs
