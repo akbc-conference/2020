@@ -38,12 +38,15 @@
 #     url: "/cfp/"
 
 - title: Virtual Conference
-  url: "/virtual-details"
+  url: "/virtual/"
   side: left
-  # dropdown:
-  #   - title: "Venue"
-  #     url: "/venue/"
-  #     side: left
+  dropdown:
+    - title: "Instructions"
+      url: "/virtual-details/"
+      side: left
+    - title: "Virtual Hub"
+      url: "/virtual/"
+      side: left
 # dropdown:
 #   - title: "Venue"
 #     url: "/venue/"
