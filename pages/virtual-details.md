@@ -73,6 +73,10 @@ Authors of each paper will participate in a _live_ poster session, where the aut
 - These meetings will be held on Zoom, potentially with multiple papers sharing a meeting.
 - The attendees will be able to join the Zoom meetings from the paper's page.
 
+### Hallway Chats
+
+Each day of the main conference will have dedicated slots for hallway chats.  Attendees can navigate the schedule to find Zoom links to join hallway chats for live interactive discussions over Zoom.
+
 ## Virtual Booth for Sponsors
 
 Each sponsor will get a dedicated page, with a chat channel and Zoom meeting link, if they are inclined to use them. The dedicated page can be used for company description, job openings, and contact information, and optionally for embedded chat and Zoom time+information (if the company is using it).
