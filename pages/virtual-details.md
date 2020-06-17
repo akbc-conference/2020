@@ -65,6 +65,7 @@ Each paper will have a dedicated page, containing the following:
 Each paper accepted to AKBC will have a short talk (5-10 minutes) on the work. This video, along with slides, will be available on the website before the conference, but will also be streamed live during the corresponding lightning talks session (in case you missed it).
 
 Questions/comments regarding individual papers can be posted their corresponding chat channels (**#paper_??**).
+Audience may also attend the poster session to ask questions through zoom video during a dedicated live session.
 
 ### Live Sessions
 
