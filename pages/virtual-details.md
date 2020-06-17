@@ -12,7 +12,7 @@ This document describes the plan for the virtual conference sessions for AKBC 20
 
 ## Software Services
 
-The main portal for the conference will be hosted at [http://akbc.ws/2020/virtual](http://akbc.ws/2020/virtual), accessible only to registrered attendees during the conference. We will be relying on the following during the conference:
+The main portal for the conference will be hosted at [http://akbc.ws/2020/virtual](http://akbc.ws/2020/virtual), accessible only to registered attendees during the conference. We will be relying on the following during the conference:
 
 - [Rocket.chat](http://rocket.chat), for Slack-like functionality, embedded in the website.
 - [Zoom](http://zoom.us) meetings and webinars, for hosting all live sessions.
@@ -20,9 +20,9 @@ The main portal for the conference will be hosted at [http://akbc.ws/2020/virtua
 
 ## Zoom
 
-[Zoom](https://zoom.us/) is a video conferencing software, with apps available for [desktops, phones, tablets](https://zoom.us/download), and even an in-browser client. 
+[Zoom](https://zoom.us/) is a video conferencing software, with apps available for [desktops, phones, tablets](https://zoom.us/download), and even an in-browser client.
 If you are an attendee, you will see links to the Zoom meetings on the respective pages (workshops, papers, speakers, etc.).
-It is possible you are already using Zoom, you should be able to join meetings without any other authentication.
+If you are already using Zoom, you should be able to join meetings without any other authentication.
 
 If you are joining an interactive session, please be mindful that, unless you mute yourself or switch off your camera, everyone else can see and hear you. Please be courteous.
 
@@ -44,13 +44,13 @@ Note that attendees can join any channel, either from their respective page, or 
 
 ## Primary Conference Sessions + Invited Talks (_Live_)
 
-We will have a live video stream, containing the opening/closing remarks, invited talks, and the streaming of the lightning talks. 
+We will have a live video stream, containing the opening and closing remarks, invited talks, and the streaming of the lightning talks.
 - We will be using a Zoom Webinar for this purpose, with the URL available only to registered attendees (and embedded on the page). 
 - Attendees will able to chat during the talk (on **#live**)
 - Attendees will be able to ask/vote on questions for the speakers (using in-built Zoom webinar functionality or embedded on website). 
 
 #### Instructions for Invited Speakers
-All the invited speakers will be presenting live. If you are an invted speaker, you will receive a secret link (specific to you) by email for a Zoom webinar. Please join before your scheduled time. 
+All the invited speakers will be presenting live. If you are an invted speaker, you will receive a secret link (specific to you) by email for a Zoom webinar. Please join before your scheduled time.
 
 ## Papers
 
