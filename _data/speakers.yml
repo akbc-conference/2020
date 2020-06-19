@@ -66,6 +66,9 @@
     speaker: Emma Strubell
     institution: Facebook / CMU
     url: https://people.cs.umass.edu/~strubell/
+    title: Learning to live with BERT
+    abstract: Large, pre-trained language models (LMs) like BERT produce high quality, general purpose representations of word(piece)s in context. Unfortunately, training and deploying these models comes at a high computational cost, limiting their development and use to a small set of institutions with access to substantial computational resources, while potentially accelerating climate change with their unprecedented energy requirements. In this talk I’ll characterize the inefficiencies of LM training and decoding, survey recent techniques for scaling down large pre-trained language models, and identify potential exciting research directions with the goal of enabling a broader array of researchers and practitioners to benefit from these powerful models, while remaining mindful of the environmental impact of our work.
+    bio: Emma Strubell is a Visiting Researcher at Facebook AI Research, and Assistant Professor in the Language Technologies Institute at Carnegie Mellon University. Her research aims to provide fast and robust natural language processing to the diversity of academic and industrial investigators eager to pull insight and decision support from massive text data in many domains. Toward this end she works at the intersection of natural language understanding, machine learning, and deep learning methods cognizant of modern tensor processing hardware. Her research has been recognized with best paper awards at ACL 2015 and EMNLP 2018.
 - 
     UID: "asu"
     thumbnail: "asu.jpg"
