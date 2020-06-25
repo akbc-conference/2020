@@ -35,6 +35,7 @@ Nearly ten years after the first AKBC workshop in Grenoble, France, AKBC has bec
 
 ## Latest news
 
+Jun 24 2020: [Best Papers]({{ site.baseurl }}/awards) announced.<br/>
 Jun 4 2020: [Registration](https://na.eventscloud.com/akbc2020) is now open, only $30 for students, and $50 for non-students.<br/>
 May 2020 : Final [dates]({{ site.baseurl }}/schedule/) of the conference accounced: **June 22-25**.<br/>
 May 2020 : List of [workshops]({{ site.baseurl }}/workshops/), with their websites, available now.<br/>

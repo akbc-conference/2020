@@ -3,14 +3,16 @@
   side: left
 
 - title: Program
-  url: "/schedule/"
+  url: "/papers/"
   side: left
   dropdown:
-    - title: Invited Speakers
-      url: "/speakers/"
-      side: left
+    - title: "Awards"
+      url: "/awards/"
     - title: Accepted Papers
       url: "/papers/"
+      side: left
+    - title: Invited Speakers
+      url: "/speakers/"
       side: left
     - title: Workshops
       url: "/workshops/"

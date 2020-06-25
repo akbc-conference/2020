@@ -3,23 +3,23 @@ layout: page-fullwidth
 title: Awards
 permalink: /awards/
 header:
-    image_fullwidth: "amherst_sky.jpg"
+  image_fullwidth: "generic-gradient.png"
 ---
 
-Congratulations to the AKBC2019 best paper award winners!
+Congratulations to the AKBC2020 award winners!
 
 
-### Best Research Paper
+### Best Paper
 
-<br />
-[Alexandria: Unsupervised High-Precision KBC using a Probabilistic Program](https://openreview.net/forum?id=rJgHCgc6pX)
+{% include paper_by_id.html id="21" %}
 
-*John Winn, John Guiver, Sam Webster, Yordan Zaykov, Martin Kukla, Dany Fabian*
+### Best Paper Nominees
 
-### Best Application Paper
+{% include paper_by_id.html id="5" %}
+{% include paper_by_id.html id="20" %}
+{% include paper_by_id.html id="48" %}
+{% include paper_by_id.html id="63" %}
 
-<br />
-[NormCo: Deep Disease Normalization for Biomedical KBC](https://openreview.net/forum?id=BJerQWcp6Q)
+### Best Poster
 
-*Dustin Wright, Yannis Katsis, Raghav Mehta, Chun-Nan Hsu*
-
+{% include paper_by_id.html id="4" %}
