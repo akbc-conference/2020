@@ -1,0 +1,8 @@
+{% assign url = site.baseurl | prepend: site.url %}
+
+{% for paper in site.data.papers %}
+    {% if paper.UID == include.id %}
+      {% assign p = paper %}        
+    {% endif %}
+{% endfor %}
+{% include paper.html p=p %}
