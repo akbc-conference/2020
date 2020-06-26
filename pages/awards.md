@@ -13,7 +13,7 @@ Congratulations to the AKBC2020 award winners!
 
 {% include paper_by_id.html id="21" %}
 
-### Best Paper Nominees
+### Best Paper Runners-Up
 
 {% include paper_by_id.html id="5" %}
 {% include paper_by_id.html id="20" %}
