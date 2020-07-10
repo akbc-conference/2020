@@ -1,0 +1,348 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/breadcrumb.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum"
+      rel="stylesheet"
+    />
+
+    <title>AKBC 2020: Exploiting Semantic Relations for Fine-grained Entity Typing</title>
+    
+<meta name="citation_title" content="Exploiting Semantic Relations for Fine-grained Entity Typing" />
+
+<meta name="citation_author" content="Hongliang Dai" />
+
+<meta name="citation_author" content="Yangqiu Song" />
+
+<meta name="citation_author" content="Xin Li" />
+
+<meta name="citation_publication_date" content="June 22-25 2020" />
+<meta name="citation_conference_title" content="Automated Knowledge Base Construction" />
+<meta name="citation_inbook_title" content="Proceedings of the Second AKBC Conference" />
+<meta name="citation_abstract" content="Fine-grained entity typing results can serve as important information for entities while constructing knowledge bases. It is a challenging task due to the use of large tag sets and the requirement of understanding the context.
+We find that, in some cases, existing neural fine-grained entity typing models may ignore the semantic information in the context that is important for typing. 
+To address this problem, we propose to exploit semantic relations extracted from the sentence to improve the use of context. The used semantic relations are mainly those that are between the mention and the other words or phrases in the sentence. 
+We investigate the use of two types of semantic relations: hypernym relation, and verb-argument relation. Our approach combine the predictions made based on different semantic relations and the predictions of a base neural model to produce the final results. We conduct experiments on two commonly used datasets: FIGER (GOLD) and BBN. Our approach achieves at least 2\% absolute strict accuracy improvement on both datasets compared with a strong BERT based model." />
+
+<meta name="citation_keywords" content="Fine-grained Entity Typing" />
+
+<meta name="citation_keywords" content="Hypernym Extraction" />
+
+<meta name="citation_keywords" content="Semantic Role Labeling" />
+
+<meta name="citation_pdf_url" content="/pdf/b91e260e0c6b51dbad1183607c61b5490ccb0b49.pdf" />
+
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!-- ('live.html', 'Live', 1),
+    ('recommended.html', 'Recommended', 1),
+    ('about.html', 'Help', 0),
+    ('chat.html', 'Chat', 1), -->
+
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+             class="logo" src="https://akbc.ws/2020/assets/img/logo_notext.png"
+             height="auto"
+             width="50px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">AKBC 2020</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="https://akbc.ws/2020">AKBC 2020</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<ul class="breadcrumb">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/papers.html">Papers</a></li>
+  <li>Paper 6</li>
+</ul>
+
+<!-- Title -->
+
+<div class="">
+<div class="card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      Exploiting Semantic Relations for Fine-grained Entity Typing
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      
+      <a href="papers.html?filter=authors&search=Hongliang Dai" class="text-muted"
+        >Hongliang Dai</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Yangqiu Song" class="text-muted"
+        >Yangqiu Song</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Xin Li" class="text-muted"
+        >Xin Li</a
+      >
+      
+    </h3>
+    <div class="text-center p-3">
+      <img src="https://akbc.ws/2020/assets/suppl/BSUYfTada3-teaser.png" width="40%" class="img-thumbnail" />
+    </div>
+    
+    <p class="card-text text-center">
+      <span class="">Keywords:</span>
+      
+      <a
+        href="papers.html?filter=keywords&search=Fine-grained Entity Typing"
+        class="text-secondary text-decoration-none"
+        >Fine-grained Entity Typing</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=Hypernym Extraction"
+        class="text-secondary text-decoration-none"
+        >Hypernym Extraction</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=Semantic Role Labeling"
+        class="text-secondary text-decoration-none"
+        >Semantic Role Labeling</a
+      >
+      
+    </p>
+    
+    
+    <p class="card-text text-center">
+      <span class="">TLDR:</span>
+      We use semantic relations associated with mentions to improve fine-grained entity typing.
+    </p>
+    
+    <div class="text-center p-3">
+      <a class="card-link" data-toggle="collapse" role="button" href="#details">
+        Abstract
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://akbc.ws/2020/papers/BSUYfTada3">
+        AKBC
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://openreview.net/forum?id=BSUYfTada3">
+        OpenReview
+      </a>
+      
+        <a class="card-link" target="_blank" href="https://akbc.ws/2020/assets/pdfs/BSUYfTada3.pdf">
+        <!-- href="https://openreview.net/pdf?id=BSUYfTada3" -->
+          PDF
+        </a>
+      
+      
+    </div>
+  </div>
+</div>
+</div>
+<div id="details" class="card m-3 collapse">
+  <div class="card-body">
+    <div class="card-text">
+      <div id="abstractExample">
+        <span class="font-weight-bold">Abstract:</span>
+        Fine-grained entity typing results can serve as important information for entities while constructing knowledge bases. It is a challenging task due to the use of large tag sets and the requirement of understanding the context.
+We find that, in some cases, existing neural fine-grained entity typing models may ignore the semantic information in the context that is important for typing. 
+To address this problem, we propose to exploit semantic relations extracted from the sentence to improve the use of context. The used semantic relations are mainly those that are between the mention and the other words or phrases in the sentence. 
+We investigate the use of two types of semantic relations: hypernym relation, and verb-argument relation. Our approach combine the predictions made based on different semantic relations and the predictions of a base neural model to produce the final results. We conduct experiments on two commonly used datasets: FIGER (GOLD) and BBN. Our approach achieves at least 2\% absolute strict accuracy improvement on both datasets compared with a strong BERT based model.
+      </div>
+    </div>
+    <p></p>
+  </div>
+</div>
+
+<div class="row">
+  
+  <div class="p-3 col-md-8 text-center">
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/1jZrb0T0qR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <!-- <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Slides</h3>
+  </div>
+</div> -->
+    <a href="/static/slides/BSUYfTada3-slides.pdf">Download Slides</a>
+    <div style="height:500px;overflow-y:scroll;">
+    <div role="main" id="slides_pdf_view"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+  <script src="static/js/pdf_render_all.js"></script>
+  <script>
+      $(document).ready(() => {
+          // render all the pages of the PDF
+          // PDF name can be bound to variable -- e.g. paper.content.poster_link
+          initPDFViewer("/static/slides/BSUYfTada3-slides.pdf",'#slides_pdf_view');
+      })
+  </script>
+  
+</div>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 AKBC Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

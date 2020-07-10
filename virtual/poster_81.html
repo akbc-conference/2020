@@ -1,0 +1,350 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/breadcrumb.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum"
+      rel="stylesheet"
+    />
+
+    <title>AKBC 2020: Ranking vs. Classifying: Measuring Knowledge Base Completion Quality</title>
+    
+<meta name="citation_title" content="Ranking vs. Classifying: Measuring Knowledge Base Completion Quality" />
+
+<meta name="citation_author" content="Marina Speranskaya" />
+
+<meta name="citation_author" content="Martin Schmitt" />
+
+<meta name="citation_author" content="Benjamin Roth" />
+
+<meta name="citation_publication_date" content="June 22-25 2020" />
+<meta name="citation_conference_title" content="Automated Knowledge Base Construction" />
+<meta name="citation_inbook_title" content="Proceedings of the Second AKBC Conference" />
+<meta name="citation_abstract" content="Knowledge base completion (KBC) methods aim at inferring missing facts from the information present in a knowledge base (KB). Such a method thus needs to estimate the likelihood of candidate facts and ultimately to distinguish between true facts and false ones to avoid compromising the KB with untrue information. In the prevailing evaluation paradigm, however, models do not actually decide whether a new fact should be accepted or not but are solely judged on the position of true facts in a likelihood ranking with other candidates. We argue that consideration of binary predictions is essential to reflect the actual KBC quality, and propose a novel evaluation paradigm, designed to provide more transparent model selection criteria for a realistic scenario. We construct the data set FB14k-QAQ with an alternative evaluation data structure: instead of single facts, we use KB queries, i.e., facts where one entity is replaced with a variable, and construct corresponding sets of entities that are correct answers. We randomly remove some of these correct answers from the data set, simulating the realistic scenario of real-world entities missing from a KB. This way, we can explicitly measure a model’s ability to handle queries that have more correct answers in the real world than in the KB, including the special case of queries without any valid answer. The latter especially contrasts the ranking setting. We evaluate a number of state-of-the-art KB embeddings models on our new benchmark. The differences in relative performance between ranking-based and classification-based evaluation that we observe in our experiments confirm our hypothesis that good performance on the ranking task does not necessarily translate to good performance on the actual completion task. Our results motivate future work on KB embedding models with better prediction separability and, as a first step in that direction, we propose a simple variant of TransE that encourages thresholding and achieves a significant improvement in classification F 1 score relative to the original TransE." />
+
+<meta name="citation_keywords" content="knowledge base completion" />
+
+<meta name="citation_keywords" content="knowledge graph embedding" />
+
+<meta name="citation_keywords" content="classification" />
+
+<meta name="citation_keywords" content="ranking" />
+
+<meta name="citation_pdf_url" content="/pdf/a11e6a97c8d61b1e10d72dffde74e70d67bf136e.pdf" />
+
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!-- ('live.html', 'Live', 1),
+    ('recommended.html', 'Recommended', 1),
+    ('about.html', 'Help', 0),
+    ('chat.html', 'Chat', 1), -->
+
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+             class="logo" src="https://akbc.ws/2020/assets/img/logo_notext.png"
+             height="auto"
+             width="50px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">AKBC 2020</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="https://akbc.ws/2020">AKBC 2020</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<ul class="breadcrumb">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/papers.html">Papers</a></li>
+  <li>Paper 81</li>
+</ul>
+
+<!-- Title -->
+
+<div class="">
+<div class="card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      Ranking vs. Classifying: Measuring Knowledge Base Completion Quality
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      
+      <a href="papers.html?filter=authors&search=Marina Speranskaya" class="text-muted"
+        >Marina Speranskaya</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Martin Schmitt" class="text-muted"
+        >Martin Schmitt</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Benjamin Roth" class="text-muted"
+        >Benjamin Roth</a
+      >
+      
+    </h3>
+    <div class="text-center p-3">
+      <img src="https://akbc.ws/2020/assets/suppl/3pcecaCEK--teaser.png" width="40%" class="img-thumbnail" />
+    </div>
+    
+    <p class="card-text text-center">
+      <span class="">Keywords:</span>
+      
+      <a
+        href="papers.html?filter=keywords&search=knowledge base completion"
+        class="text-secondary text-decoration-none"
+        >knowledge base completion</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=knowledge graph embedding"
+        class="text-secondary text-decoration-none"
+        >knowledge graph embedding</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=classification"
+        class="text-secondary text-decoration-none"
+        >classification</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=ranking"
+        class="text-secondary text-decoration-none"
+        >ranking</a
+      >
+      
+    </p>
+    
+    
+    <p class="card-text text-center">
+      <span class="">TLDR:</span>
+      We publish a new evaluation benchmark for knowledge graph completion methods where ranking is replaced with actual classification, and show one way to improve knowledge graph embedding models in this new setting.
+    </p>
+    
+    <div class="text-center p-3">
+      <a class="card-link" data-toggle="collapse" role="button" href="#details">
+        Abstract
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://akbc.ws/2020/papers/3pcecaCEK-">
+        AKBC
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://openreview.net/forum?id=3pcecaCEK-">
+        OpenReview
+      </a>
+      
+        <a class="card-link" target="_blank" href="https://akbc.ws/2020/assets/pdfs/3pcecaCEK-.pdf">
+        <!-- href="https://openreview.net/pdf?id=3pcecaCEK-" -->
+          PDF
+        </a>
+      
+      
+    </div>
+  </div>
+</div>
+</div>
+<div id="details" class="card m-3 collapse">
+  <div class="card-body">
+    <div class="card-text">
+      <div id="abstractExample">
+        <span class="font-weight-bold">Abstract:</span>
+        Knowledge base completion (KBC) methods aim at inferring missing facts from the information present in a knowledge base (KB). Such a method thus needs to estimate the likelihood of candidate facts and ultimately to distinguish between true facts and false ones to avoid compromising the KB with untrue information. In the prevailing evaluation paradigm, however, models do not actually decide whether a new fact should be accepted or not but are solely judged on the position of true facts in a likelihood ranking with other candidates. We argue that consideration of binary predictions is essential to reflect the actual KBC quality, and propose a novel evaluation paradigm, designed to provide more transparent model selection criteria for a realistic scenario. We construct the data set FB14k-QAQ with an alternative evaluation data structure: instead of single facts, we use KB queries, i.e., facts where one entity is replaced with a variable, and construct corresponding sets of entities that are correct answers. We randomly remove some of these correct answers from the data set, simulating the realistic scenario of real-world entities missing from a KB. This way, we can explicitly measure a model’s ability to handle queries that have more correct answers in the real world than in the KB, including the special case of queries without any valid answer. The latter especially contrasts the ranking setting. We evaluate a number of state-of-the-art KB embeddings models on our new benchmark. The differences in relative performance between ranking-based and classification-based evaluation that we observe in our experiments confirm our hypothesis that good performance on the ranking task does not necessarily translate to good performance on the actual completion task. Our results motivate future work on KB embedding models with better prediction separability and, as a first step in that direction, we propose a simple variant of TransE that encourages thresholding and achieves a significant improvement in classification F 1 score relative to the original TransE.
+      </div>
+    </div>
+    <p></p>
+  </div>
+</div>
+
+<div class="row">
+  
+  <div class="p-3 col-md-8 text-center">
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/5P5oTKkN9XM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <!-- <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Slides</h3>
+  </div>
+</div> -->
+    <a href="/static/slides/3pcecaCEK--slides.pdf">Download Slides</a>
+    <div style="height:500px;overflow-y:scroll;">
+    <div role="main" id="slides_pdf_view"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+  <script src="static/js/pdf_render_all.js"></script>
+  <script>
+      $(document).ready(() => {
+          // render all the pages of the PDF
+          // PDF name can be bound to variable -- e.g. paper.content.poster_link
+          initPDFViewer("/static/slides/3pcecaCEK--slides.pdf",'#slides_pdf_view');
+      })
+  </script>
+  
+</div>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 AKBC Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

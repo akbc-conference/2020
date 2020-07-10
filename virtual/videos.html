@@ -1,0 +1,688 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/breadcrumb.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum"
+      rel="stylesheet"
+    />
+
+    <title>AKBC 2020: Videos</title>
+    
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!-- ('live.html', 'Live', 1),
+    ('recommended.html', 'Recommended', 1),
+    ('about.html', 'Help', 0),
+    ('chat.html', 'Chat', 1), -->
+
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+             class="logo" src="https://akbc.ws/2020/assets/img/logo_notext.png"
+             height="auto"
+             width="50px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">AKBC 2020</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="https://akbc.ws/2020">AKBC 2020</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+
+<!-- YouTube link -->
+<div class="row m-3">
+  
+  
+  
+  <div class="col-md-6 col-sm-12">
+    <!-- Live Streams -->
+    <!-- <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PL4QDQWHNapHsA5kwvoeKfTFRbtyYfsyar" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/JsB4T35We0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Papers Playlist -->
+    <!-- <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PL4QDQWHNapHvC1ONe4Y1hrWwa5m9WvgWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  </div>
+
+  <div class="col-md-6 col-sm-12">
+    <div id="details" class="card">
+      <div class="card-body" style="max-height: 560px;overflow-y:auto">
+        <div class="card-text">
+            <p>
+              <b>Day 1,</b> <span id="date1" class="text-muted">2020-06-22</span>
+            </p>
+            <p>
+            
+              <span id="startopening"></span> - <span id="endopening"></span>:
+              
+                <b>Opening Remarks</b>
+              
+              <br/>
+            
+              <span id="startwcohen"></span> - <span id="endwcohen"></span>:
+              
+                <a href="/speaker_wcohen.html" >Invited: William Cohen</a>
+              
+              <br/>
+            
+              <span id="startjleskovec"></span> - <span id="endjleskovec"></span>:
+              
+                <a href="/speaker_jleskovec.html" >Invited: Jure Leskovec</a>
+              
+              <br/>
+            
+              <span id="startd1talks"></span> - <span id="endd1talks"></span>:
+              
+                <a href="/session_d1posters.html" >Day 1 Lightning Talks</a>
+              
+              <br/>
+            
+              <span id="startd1posters"></span> - <span id="endd1posters"></span>:
+              
+                <a href="/session_d1posters.html" >Day 1 Poster Session</a>
+              
+              <br/>
+            
+              <span id="startjtaylor"></span> - <span id="endjtaylor"></span>:
+              
+                <a href="/speaker_jtaylor.html" >Invited: Jamie Taylor</a>
+              
+              <br/>
+            
+              <span id="startldong"></span> - <span id="endldong"></span>:
+              
+                <a href="/speaker_ldong.html" >Invited: Xin Luna Dong</a>
+              
+              <br/>
+            
+              <span id="startd1hallway"></span> - <span id="endd1hallway"></span>:
+              
+                <a href="/session_d1hallway.html" >Day 1 Hallway Chats</a>
+              
+              <br/>
+            
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-md-6 col-sm-12">
+    <!-- Live Streams -->
+    <!-- <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PL4QDQWHNapHsA5kwvoeKfTFRbtyYfsyar" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/KTQPWoQ7Ol8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Papers Playlist -->
+    <!-- <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PL4QDQWHNapHvC1ONe4Y1hrWwa5m9WvgWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  </div>
+
+  <div class="col-md-6 col-sm-12">
+    <div id="details" class="card">
+      <div class="card-body" style="max-height: 560px;overflow-y:auto">
+        <div class="card-text">
+            <p>
+              <b>Day 2,</b> <span id="date2" class="text-muted">2020-06-23</span>
+            </p>
+            <p>
+            
+              <span id="startlzettlemoyer"></span> - <span id="endlzettlemoyer"></span>:
+              
+                <a href="/speaker_lzettlemoyer.html" >Invited: Luke Zettlemoyer</a>
+              
+              <br/>
+            
+              <span id="startnnakashole"></span> - <span id="endnnakashole"></span>:
+              
+                <a href="/speaker_nnakashole.html" >Invited: Ndapandula Nakashole</a>
+              
+              <br/>
+            
+              <span id="startestrubell"></span> - <span id="endestrubell"></span>:
+              
+                <a href="/speaker_estrubell.html" >Invited: Emma Strubell</a>
+              
+              <br/>
+            
+              <span id="startd2talks"></span> - <span id="endd2talks"></span>:
+              
+                <a href="/session_d2posters.html" >Day 2 Lightning Talks</a>
+              
+              <br/>
+            
+              <span id="startd2posters"></span> - <span id="endd2posters"></span>:
+              
+                <a href="/session_d2posters.html" >Day 2 Poster Session</a>
+              
+              <br/>
+            
+              <span id="startasu"></span> - <span id="endasu"></span>:
+              
+                <a href="/speaker_asu.html" >Invited: Andrew Su</a>
+              
+              <br/>
+            
+              <span id="startdyang"></span> - <span id="enddyang"></span>:
+              
+                <a href="/speaker_dyang.html" >Invited: Diyi Yang</a>
+              
+              <br/>
+            
+              <span id="startd2hallway"></span> - <span id="endd2hallway"></span>:
+              
+                <a href="/session_d2hallway.html" >Day 2 Hallway Chats</a>
+              
+              <br/>
+            
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="col-md-6 col-sm-12">
+    <!-- Live Streams -->
+    <!-- <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PL4QDQWHNapHsA5kwvoeKfTFRbtyYfsyar" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/EIoy9xSabYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Papers Playlist -->
+    <!-- <iframe width="100%" height="540" src="https://www.youtube.com/embed/videoseries?list=PL4QDQWHNapHvC1ONe4Y1hrWwa5m9WvgWU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  </div>
+
+  <div class="col-md-6 col-sm-12">
+    <div id="details" class="card">
+      <div class="card-body" style="max-height: 560px;overflow-y:auto">
+        <div class="card-text">
+            <p>
+              <b>Day 3,</b> <span id="date3" class="text-muted">2020-06-24</span>
+            </p>
+            <p>
+            
+              <span id="startjberant"></span> - <span id="endjberant"></span>:
+              
+                <a href="/speaker_jberant.html" >Invited: Jonathan Berant</a>
+              
+              <br/>
+            
+              <span id="startbvandurme"></span> - <span id="endbvandurme"></span>:
+              
+                <a href="/speaker_bvandurme.html" >Invited: Benjamin Van Durme</a>
+              
+              <br/>
+            
+              <span id="startd3talks"></span> - <span id="endd3talks"></span>:
+              
+                <a href="session_d3posters.html" >Day 3 Lightning Talks</a>
+              
+              <br/>
+            
+              <span id="startd3posters"></span> - <span id="endd3posters"></span>:
+              
+                <a href="/session_d3posters.html" >Day 3 Poster Session</a>
+              
+              <br/>
+            
+              <span id="starttrekatsinas"></span> - <span id="endtrekatsinas"></span>:
+              
+                <a href="/speaker_trekatsinas.html" >Invited: Theodoros Rekatsinas</a>
+              
+              <br/>
+            
+              <span id="starthji"></span> - <span id="endhji"></span>:
+              
+                <a href="/speaker_hji.html" >Invited: Heng Ji</a>
+              
+              <br/>
+            
+              <span id="startd3hallway"></span> - <span id="endd3hallway"></span>:
+              
+                <a href="/session_d3hallway.html" >Day 3 Hallway Chats</a>
+              
+              <br/>
+            
+              <span id="startclosing"></span> - <span id="endclosing"></span>:
+              
+                <b>Closing Remarks</b>
+              
+              <br/>
+            
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+
+</div>
+
+
+  
+  
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var date = moment("2020-06-22").tz(tz).format('ddd, MMMM DD');
+  $('#date1').html(date);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T08:00:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T08:20:00-07:00").tz(tz).format('LT');
+  $('#startopening').html(start);
+  $('#endopening').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T08:20:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T08:55:00-07:00").tz(tz).format('LT');
+  $('#startwcohen').html(start);
+  $('#endwcohen').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T08:55:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T09:30:00-07:00").tz(tz).format('LT');
+  $('#startjleskovec').html(start);
+  $('#endjleskovec').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T09:30:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T10:20:00-07:00").tz(tz).format('LT');
+  $('#startd1talks').html(start);
+  $('#endd1talks').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T10:20:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T11:20:00-07:00").tz(tz).format('LT');
+  $('#startd1posters').html(start);
+  $('#endd1posters').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T11:20:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T11:55:00-07:00").tz(tz).format('LT');
+  $('#startjtaylor').html(start);
+  $('#endjtaylor').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T11:55:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T12:30:00-07:00").tz(tz).format('LT');
+  $('#startldong').html(start);
+  $('#endldong').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-22T12:30:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-22T13:30:00-07:00").tz(tz).format('LT');
+  $('#startd1hallway').html(start);
+  $('#endd1hallway').html(end);
+</script>
+  
+
+  
+  
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var date = moment("2020-06-23").tz(tz).format('ddd, MMMM DD');
+  $('#date2').html(date);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T12:00:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T12:35:00-07:00").tz(tz).format('LT');
+  $('#startlzettlemoyer').html(start);
+  $('#endlzettlemoyer').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T12:35:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T13:10:00-07:00").tz(tz).format('LT');
+  $('#startnnakashole').html(start);
+  $('#endnnakashole').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T13:10:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T13:45:00-07:00").tz(tz).format('LT');
+  $('#startestrubell').html(start);
+  $('#endestrubell').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T13:45:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T14:45:00-07:00").tz(tz).format('LT');
+  $('#startd2talks').html(start);
+  $('#endd2talks').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T14:45:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T15:45:00-07:00").tz(tz).format('LT');
+  $('#startd2posters').html(start);
+  $('#endd2posters').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T15:45:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T16:20:00-07:00").tz(tz).format('LT');
+  $('#startasu').html(start);
+  $('#endasu').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T16:20:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T16:55:00-07:00").tz(tz).format('LT');
+  $('#startdyang').html(start);
+  $('#enddyang').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-23T16:55:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-23T17:30:00-07:00").tz(tz).format('LT');
+  $('#startd2hallway').html(start);
+  $('#endd2hallway').html(end);
+</script>
+  
+
+  
+  
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var date = moment("2020-06-24").tz(tz).format('ddd, MMMM DD');
+  $('#date3').html(date);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T08:15:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T08:50:00-07:00").tz(tz).format('LT');
+  $('#startjberant').html(start);
+  $('#endjberant').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T08:50:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T09:25:00-07:00").tz(tz).format('LT');
+  $('#startbvandurme').html(start);
+  $('#endbvandurme').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T09:25:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T10:25:00-07:00").tz(tz).format('LT');
+  $('#startd3talks').html(start);
+  $('#endd3talks').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T10:25:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T11:25:00-07:00").tz(tz).format('LT');
+  $('#startd3posters').html(start);
+  $('#endd3posters').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T11:25:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T12:00:00-07:00").tz(tz).format('LT');
+  $('#starttrekatsinas').html(start);
+  $('#endtrekatsinas').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T12:00:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T12:35:00-07:00").tz(tz).format('LT');
+  $('#starthji').html(start);
+  $('#endhji').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T12:35:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T13:35:00-07:00").tz(tz).format('LT');
+  $('#startd3hallway').html(start);
+  $('#endd3hallway').html(end);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-24T13:35:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-24T13:45:00-07:00").tz(tz).format('LT');
+  $('#startclosing').html(start);
+  $('#endclosing').html(end);
+</script>
+  
+
+  
+  
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var date = moment("2020-06-25").tz(tz).format('ddd, MMMM DD');
+  $('#date4').html(date);
+</script>
+  
+    
+<script type="text/javascript">
+  var tz = moment.tz.guess();
+  var start = moment("2020-06-25T08:00:00-07:00").tz(tz).format('LT');
+  var end = moment("2020-06-25T13:00:00-07:00").tz(tz).format('LT');
+  $('#startworkshops').html(start);
+  $('#endworkshops').html(end);
+</script>
+  
+
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 AKBC Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

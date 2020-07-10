@@ -1,0 +1,406 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/breadcrumb.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum"
+      rel="stylesheet"
+    />
+
+    <title>AKBC 2020: Cross-context News Corpus for Protest Events related Knowledge Base Construction</title>
+    
+<meta name="citation_title" content="Cross-context News Corpus for Protest Events related Knowledge Base Construction" />
+
+<meta name="citation_author" content="Ali Hürriyetoğlu" />
+
+<meta name="citation_author" content="Erdem Yörük" />
+
+<meta name="citation_author" content="Deniz Yüret" />
+
+<meta name="citation_author" content="Osman Mutlu" />
+
+<meta name="citation_author" content="Çağrı Yoltar" />
+
+<meta name="citation_author" content="Fırat Duruşan" />
+
+<meta name="citation_author" content="Burak Gürel" />
+
+<meta name="citation_publication_date" content="June 22-25 2020" />
+<meta name="citation_conference_title" content="Automated Knowledge Base Construction" />
+<meta name="citation_inbook_title" content="Proceedings of the Second AKBC Conference" />
+<meta name="citation_abstract" content="We describe a gold standard corpus of protest events that comprise of various local and international sources from various countries in English. The corpus contains document, sentence, and token level annotations. This corpus facilitates creating machine learning models that automatically classify news articles and extract protest event related information, constructing databases which enable comparative social and political science studies. For each news source, the annotation starts on random samples of news articles and continues with samples that are drawn using active learning. Each batch of samples was annotated by two social and political scientists, adjudicated by an annotation supervisor, and was improved by identifying annotation errors semi-automatically. We found that the corpus has the variety and quality to develop and benchmark text classification and event extraction systems in a cross-context setting, which contributes to generalizability and robustness of automated text processing systems. This corpus and the reported results will set the currently lacking common ground in automated protest event collection studies." />
+
+<meta name="citation_keywords" content="protests" />
+
+<meta name="citation_keywords" content="contentious politics" />
+
+<meta name="citation_keywords" content="news" />
+
+<meta name="citation_keywords" content="text classification" />
+
+<meta name="citation_keywords" content="event extraction" />
+
+<meta name="citation_keywords" content="social sciences" />
+
+<meta name="citation_keywords" content="political sciences" />
+
+<meta name="citation_keywords" content="computational social science" />
+
+<meta name="citation_pdf_url" content="/pdf/1bde724acb48562f9d8d8f077e4e0236379e8596.pdf" />
+
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!-- ('live.html', 'Live', 1),
+    ('recommended.html', 'Recommended', 1),
+    ('about.html', 'Help', 0),
+    ('chat.html', 'Chat', 1), -->
+
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+             class="logo" src="https://akbc.ws/2020/assets/img/logo_notext.png"
+             height="auto"
+             width="50px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">AKBC 2020</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="https://akbc.ws/2020">AKBC 2020</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<ul class="breadcrumb">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/papers.html">Papers</a></li>
+  <li>Paper 90</li>
+</ul>
+
+<!-- Title -->
+
+<div class="">
+<div class="card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      Cross-context News Corpus for Protest Events related Knowledge Base Construction
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      
+      <a href="papers.html?filter=authors&search=Ali Hürriyetoğlu" class="text-muted"
+        >Ali Hürriyetoğlu</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Erdem Yörük" class="text-muted"
+        >Erdem Yörük</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Deniz Yüret" class="text-muted"
+        >Deniz Yüret</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Osman Mutlu" class="text-muted"
+        >Osman Mutlu</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Çağrı Yoltar" class="text-muted"
+        >Çağrı Yoltar</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Fırat Duruşan" class="text-muted"
+        >Fırat Duruşan</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Burak Gürel" class="text-muted"
+        >Burak Gürel</a
+      >
+      
+    </h3>
+    <div class="text-center p-3">
+      <img src="https://akbc.ws/2020/assets/suppl/7NZkNhLCjp-teaser.png" width="40%" class="img-thumbnail" />
+    </div>
+    
+    <p class="card-text text-center">
+      <span class="">Keywords:</span>
+      
+      <a
+        href="papers.html?filter=keywords&search=protests"
+        class="text-secondary text-decoration-none"
+        >protests</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=contentious politics"
+        class="text-secondary text-decoration-none"
+        >contentious politics</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=news"
+        class="text-secondary text-decoration-none"
+        >news</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=text classification"
+        class="text-secondary text-decoration-none"
+        >text classification</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=event extraction"
+        class="text-secondary text-decoration-none"
+        >event extraction</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=social sciences"
+        class="text-secondary text-decoration-none"
+        >social sciences</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=political sciences"
+        class="text-secondary text-decoration-none"
+        >political sciences</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=computational social science"
+        class="text-secondary text-decoration-none"
+        >computational social science</a
+      >
+      
+    </p>
+    
+    
+    <p class="card-text text-center">
+      <span class="">TLDR:</span>
+      We describe a gold standard corpus of protest events that comprise of various local and international sources from various countries in English.
+    </p>
+    
+    <div class="text-center p-3">
+      <a class="card-link" data-toggle="collapse" role="button" href="#details">
+        Abstract
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://akbc.ws/2020/papers/7NZkNhLCjp">
+        AKBC
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://openreview.net/forum?id=7NZkNhLCjp">
+        OpenReview
+      </a>
+      
+        <a class="card-link" target="_blank" href="https://akbc.ws/2020/assets/pdfs/7NZkNhLCjp.pdf">
+        <!-- href="https://openreview.net/pdf?id=7NZkNhLCjp" -->
+          PDF
+        </a>
+      
+      
+    </div>
+  </div>
+</div>
+</div>
+<div id="details" class="card m-3 collapse">
+  <div class="card-body">
+    <div class="card-text">
+      <div id="abstractExample">
+        <span class="font-weight-bold">Abstract:</span>
+        We describe a gold standard corpus of protest events that comprise of various local and international sources from various countries in English. The corpus contains document, sentence, and token level annotations. This corpus facilitates creating machine learning models that automatically classify news articles and extract protest event related information, constructing databases which enable comparative social and political science studies. For each news source, the annotation starts on random samples of news articles and continues with samples that are drawn using active learning. Each batch of samples was annotated by two social and political scientists, adjudicated by an annotation supervisor, and was improved by identifying annotation errors semi-automatically. We found that the corpus has the variety and quality to develop and benchmark text classification and event extraction systems in a cross-context setting, which contributes to generalizability and robustness of automated text processing systems. This corpus and the reported results will set the currently lacking common ground in automated protest event collection studies.
+      </div>
+    </div>
+    <p></p>
+  </div>
+</div>
+
+<div class="row">
+  
+  <div class="p-3 col-md-8 text-center">
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/0dBDXinNnYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <!-- <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Slides</h3>
+  </div>
+</div> -->
+    <a href="/static/slides/7NZkNhLCjp-slides.pdf">Download Slides</a>
+    <div style="height:500px;overflow-y:scroll;">
+    <div role="main" id="slides_pdf_view"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+  <script src="static/js/pdf_render_all.js"></script>
+  <script>
+      $(document).ready(() => {
+          // render all the pages of the PDF
+          // PDF name can be bound to variable -- e.g. paper.content.poster_link
+          initPDFViewer("/static/slides/7NZkNhLCjp-slides.pdf",'#slides_pdf_view');
+      })
+  </script>
+  
+</div>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 AKBC Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

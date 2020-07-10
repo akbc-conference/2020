@@ -1,0 +1,2105 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/breadcrumb.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum"
+      rel="stylesheet"
+    />
+
+    <title>AKBC 2020: Schedule</title>
+    
+<script src="https://cdn.jsdelivr.net/npm/ical.js@1.4.0/build/ical.min.js" integrity="sha256-iFbWWsVYU6rIgbq5wJc4mp8zvV3SkqupxgH/7a9PanY=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.26.0/dist/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.31/builds/moment-timezone-with-data-10-year-range.min.js" integrity="sha256-Dx3P9LwbB/WuS+7Xv37Y+qcPS/14AwFH653Pw80AOhY=" crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/tui-code-snippet@1.5.2/dist/tui-code-snippet.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tui-dom@3.0.0/dist/tui-dom.min.js" integrity="sha256-Ha3QUAK/d/Z2BMN/hDoBjwP0Q0f5uS9MploTRSLqrLI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/tui-calendar@1/dist/tui-calendar.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/css/bootstrap-select.min.css"
+/>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.10/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+<script src="static/js/lazy_load.js"></script>
+<script src="static/js/little_helpers.js"></script>
+<script type="text/javascript" src="static/js/calendar.js"></script>
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!-- ('live.html', 'Live', 1),
+    ('recommended.html', 'Recommended', 1),
+    ('about.html', 'Help', 0),
+    ('chat.html', 'Chat', 1), -->
+
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+             class="logo" src="https://akbc.ws/2020/assets/img/logo_notext.png"
+             height="auto"
+             width="50px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">AKBC 2020</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="https://akbc.ws/2020">AKBC 2020</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      class="nav-link active text-muted "
+      data-toggle="tab"
+      href="#tab-calendar"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Calendar
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-d1"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Day 1
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-d2"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Day 2
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      class="nav-link  text-muted "
+      data-toggle="tab"
+      href="#tab-d3"
+      role="tab"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Day 3
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  <!-- Calender tab -->
+  <!-- <iframe src="https://calendar.google.com/calendar/embed?src=akbcconf%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+  <div
+    class="tab-pane active"
+    id="tab-calendar"
+    role="tabpanel"
+    aria-labelledby="nav-profile-tab"
+  >
+    <div class="form-group col">
+      <label for="tzOptions">Timezone:</label>
+      <select id="tzOptions" class="selectpicker" data-live-search="true">
+      </select>
+      Download: <a href="/get-ics">iCal</a> or
+      <a href="https://calendar.google.com/calendar/b/5?cid=YWtiY2NvbmZAZ21haWwuY29t">GCal</a>. 
+    </div>
+
+    <!-- full cal for browser-->
+    <div id="calendar" class="d-none d-sm-block"></div>
+
+    <!-- small cal for smart phones-->
+    <div id="calendar_small" class="d-sm-none"></div>
+
+    <script type="text/javascript">
+      make_cal("serve_main_calendar.json");
+    </script>
+  </div>
+
+  <!-- Day Tabs -->
+
+  
+  <div
+    class="tab-pane"
+    id="tab-d1"
+    role="tabpanel"
+  >
+    <div id="d1">
+      <!-- Speakers -->
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Speakers</h3>
+  </div>
+</div>
+      <div class="speakers">
+        <div class="row p-1">
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/wcohen.jfif" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_wcohen.html" class="main-title">
+                  KR for KBQA and KBC
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                William Cohen  /  Google AI
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="http://www.cs.cmu.edu/~wcohen/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              KB completion can be viewed as answering structured queries against a KB. Since answering the queries requires more than simply retrieving known facts, answering these queries requires some non-trivial processing, and hence is broadly similar to logical inference in a conventional symbolic KB. KB question-answering (KBQA) also answers queries against a KB, but in this case the queries are unstructured text queries. So both KBQA and KBC use some analog of "reasoning" over a KB. This raises the question: what can we learn about KBQA and KBC from the classical AI subfield of knowledge representation (KR)? In KR the central question is how to represent knowledge in a form that supports efficient, expressive reasoning. In my talk I will try to revisit this question in the context of modern neural learning methods, and tie the themes explored in classical KR to recently-proposed methods for KBC and KBQA.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/jleskovec.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_jleskovec.html" class="main-title">
+                  Representation Learning for Logical Reasoning in Knowledge Graphs
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Jure Leskovec  /  Stanford
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://cs.stanford.edu/people/jure/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Learning low-dimensional embeddings of knowledge graphs is a powerful approach for predicting unobserved or missing relations between entities. However, an open challenge in this area is developing techniques that can go beyond single edge prediction and handle more complex multi-hop logical queries, which might involve multiple unobserved edges, entities, and variables. In this talk we present a framework to efficiently answer multi-hop logical queries on knowledge graphs. Our main insight is that queries can be embedded as boxes (i.e., hyper-rectangles), where a set of points inside the box corresponds to a set of answer entities of the query. We show that conjunctions and disjunctions can be naturally represented as intersections/unions of boxes. We demonstrate the effectiveness of our approach on large KGs and show its robustness in the presence of noise and missing relations.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/jtaylor.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_jtaylor.html" class="main-title">
+                  A long view on Identity
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Jamie Taylor  /  Google
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://www.linkedin.com/in/jamie-taylor-853953/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Google's Knowledge Graph is a durable collection of entities.  As new things are learned over time about an entity, those "facts" are added to the entity. This long term accumulation of knowledge is central to the value of KG. To make this growth strategy work, the entities must be easily distinguishable from one another and stable in what they represent.  But how should the boundaries between each entity be determined?  Moreover, what is the right granularity of categories and relations that should be applied to these entities?  There are many options for how the world could be cleaved ontologically, but experience with a large stable knowledge graph has shown that pragmatically some criteria may matter more than others. And yet, in some cases, the decision might not be as important as we thought.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/ldong.jpeg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_ldong.html" class="main-title">
+                  Harvesting knowledge from the semi-structured web
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Xin Luna Dong  /  Amazon
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="http://lunadong.com/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Knowledge graphs have been used to support a wide range of applications and enhance search and QA for Google, Amazon Alexa, etc. However, we often miss long-tail knowledge, including unpopular entities, unpopular relations, and unpopular verticals. In this talk we describe our efforts in harvesting knowledge from semi-structured websites, which are often populated according to some templates using vast volume of data stored in underlying databases. We describe our AutoCeres ClosedIE system, which improves the accuracy of fully automatic knowledge extraction from 60%+ of state-of-the-art to 90%+ on semi-structured data. We also describe OpenCeres, the first ever OpenIE system on semi-structured data, that is able to identify new relations not readily included in existing ontologies. In addition, we describe our other efforts in ontology alignment, entity linkage, graph mining, and QA, that allow us to best leverage the knowledge we extract for search and QA.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      </div>
+      
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Papers</h3>
+  </div>
+</div>
+      <div class="papers">
+        <div id="papergroup1" class="row mb-4">
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/025X0zPfn-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_21.html" class="main-title">
+                  <span class="h6">
+                    How Context Affects Language Models&#39; Factual Predictions
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Fabio Petroni,
+                    
+                    Patrick Lewis,
+                    
+                    Aleksandra Piktus,
+                    
+                    Tim Rocktäschel,
+                    
+                    Yuxiang Wu,
+                    
+                    Alexander H. Miller,
+                    
+                    Sebastian Riedel
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/grnYRcBwjq-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_63.html" class="main-title">
+                  <span class="h6">
+                    Procedural Reading Comprehension with Attribute-Aware Context Flow
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Aida Amini,
+                    
+                    Antoine Bosselut,
+                    
+                    Bhavana Dalvi Mishra,
+                    
+                    Yejin Choi,
+                    
+                    Hannaneh Hajishirzi
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/1uufzxsxfL-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_5.html" class="main-title">
+                  <span class="h6">
+                    Revisiting Evaluation of Knowledge Base Completion Models
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Pouya Pezeshkpour,
+                    
+                    Yifan Tian,
+                    
+                    Sameer Singh
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/kXVazet_cB-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_20.html" class="main-title">
+                  <span class="h6">
+                    Graph Hawkes Neural Network for Forecasting on Temporal Knowledge Graphs
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Zhen Han,
+                    
+                    Yunpu Ma,
+                    
+                    Yuyi Wang,
+                    
+                    Stephan Günnemann,
+                    
+                    Volker Tresp
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/AEY9tRqlU7-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_48.html" class="main-title">
+                  <span class="h6">
+                    A Simple Approach to Case-Based Reasoning in Knowledge Bases
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Rajarshi Das,
+                    
+                    Ameya Godbole,
+                    
+                    Shehzaad Dhuliawala,
+                    
+                    Manzil Zaheer,
+                    
+                    Andrew McCallum
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      lazyLoader();
+    </script>
+  </div>
+  
+  <div
+    class="tab-pane"
+    id="tab-d2"
+    role="tabpanel"
+  >
+    <div id="d2">
+      <!-- Speakers -->
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Speakers</h3>
+  </div>
+</div>
+      <div class="speakers">
+        <div class="row p-1">
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/lzettlemoyer.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_lzettlemoyer.html" class="main-title">
+                  Denoising Sequence-to-Sequence Pre-training
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Luke Zettlemoyer  /  University of Washington / Facebook
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://www.cs.washington.edu/people/faculty/lsz">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Denoising auto-encoders can be pre-trained at a very large scale by noising and then reconstructing any input text. Existing methods, based on variations of masked languages models, have transformed the field and are now provide the de facto initialization to be tuned for nearly every task. In this talk, I will present our work on sequence-to-sequence pre-training that allows arbitrary noising, by simply learning to translate any corrupted text back to the original with standard Tranformer-based neural machine translation architectures. I will show the resulting mono-lingual (BART) and multi-lingual (mBART) models are highly effective for a wide range of discrimination and generation tasks, including question answer, summarization, and machine translation. A key contribution of our generalized noising is that we can replicate other pretraining schemes within the BART framework, to better measure which factors most influence end-task performance, as I will describe. Finally, I will highlight many of the ways BART is already being used by other researchers, and discuss opportunities to further push models that pre-train for generating and understanding text in many languages.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/nnakashole.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_nnakashole.html" class="main-title">
+                  Text Processing for Learning and Automation of Data Science.
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Ndapandula Nakashole  /  University of California San Diego
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="http://nakashole.com/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              How can text processing models be used to help self-directed students learn the skills they need to be effective data scientists, for example, the basics of Probability Theory? How can text processing models be used to automate mundane data wrangling tasks to help improve efficiency of Data Scientists? In this talk, I will discuss these questions, and our work on the NLP systems we are building to answer these questions.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/estrubell.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_estrubell.html" class="main-title">
+                  Learning to live with BERT
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Emma Strubell  /  Facebook / CMU
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://people.cs.umass.edu/~strubell/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Large, pre-trained language models (LMs) like BERT produce high quality, general purpose representations of word(piece)s in context. Unfortunately, training and deploying these models comes at a high computational cost, limiting their development and use to a small set of institutions with access to substantial computational resources, while potentially accelerating climate change with their unprecedented energy requirements. In this talk I’ll characterize the inefficiencies of LM training and decoding, survey recent techniques for scaling down large pre-trained language models, and identify potential exciting research directions with the goal of enabling a broader array of researchers and practitioners to benefit from these powerful models, while remaining mindful of the environmental impact of our work.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/asu.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_asu.html" class="main-title">
+                  Building and mining a heterogenous biomedical knowledge graph
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Andrew Su  /  Scripps Institute
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://www.scripps.edu/faculty/su/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              The biomedical research community is incredibly productive, producing over one million new publications per year. However, the knowledge contained in those publications usually remains in unstructured free text, or is fragmented across unconnected data silos. Here, I will describe recent efforts to integrate biomedical knowledge into large, heterogeneous knowledge graphs, and to mine those knowledge graphs to identify novel testable hypotheses
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/dyang.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_dyang.html" class="main-title">
+                  Language Understanding in Social Context
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Diyi Yang  /  Georgia Institute of Technology
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://www.cc.gatech.edu/~dyang888/experience.html">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Over the last few decades, natural language processing (NLP) has had increasing success and produced industrial applications like search, and personal assistants. Despite being sufficient to enable these applications, current NLP systems largely ignore the social part of language, e.g., who says it, in what context, for what goals. My research combines NLP, linguistics and social science to study how people use language in different social settings for their social goals, with the implications of developing systems to facilitate human-human and human-machine communication. In this talk, I will explain my research from two specific studies. The first part studies what makes language persuasive by introducing a semi-supervised neural network to recognize persuasion strategies in loan requests on crowdfunding platforms, and further designed neural encoder-decoder systems to automatically transform inappropriately subjective framing into a neutral point of view. The second focuses on modeling how people seek and offer support via language in online cancer support communities and building interventions to support patient communication. Through these examples, I show how we can accurately and efficiently build better language technologies for social contexts.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      </div>
+      
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Papers</h3>
+  </div>
+</div>
+      <div class="papers">
+        <div id="papergroup2" class="row mb-4">
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/yuD2q50HWv-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_75.html" class="main-title">
+                  <span class="h6">
+                    CommonGen: A Constrained Text Generation Challenge for Generative Commonsense Reasoning
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Bill Yuchen Lin,
+                    
+                    Ming Shen,
+                    
+                    Wangchunshu Zhou,
+                    
+                    Pei Zhou,
+                    
+                    Chandra Bhagavatula,
+                    
+                    Yejin Choi,
+                    
+                    Xiang Ren
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/OnUd3hf3o3-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_85.html" class="main-title">
+                  <span class="h6">
+                    Using BibTeX to Automatically Generate Labeled Data for Citation Field Extraction
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Dung Thai,
+                    
+                    Zhiyang Xu,
+                    
+                    Nicholas Monath,
+                    
+                    Boris Veytsman,
+                    
+                    Andrew McCallum
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/iHXV8UGYyL-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_83.html" class="main-title">
+                  <span class="h6">
+                    Empirical Evaluation of Pretraining Strategies for Supervised Entity Linking
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Thibault Févry,
+                    
+                    Nicholas FitzGerald,
+                    
+                    Livio Baldini Soares,
+                    
+                    Tom Kwiatkowski
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/5c_ZmAdVfI-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_30.html" class="main-title">
+                  <span class="h6">
+                    Syntactic Question Abstraction and Retrieval for Data-Scarce Semantic Parsing
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Wonseok Hwang,
+                    
+                    Jinyeong Yim,
+                    
+                    Seunghyun Park,
+                    
+                    Minjoon Seo
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/7NZkNhLCjp-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_90.html" class="main-title">
+                  <span class="h6">
+                    Cross-context News Corpus for Protest Events related Knowledge Base Construction
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Ali Hürriyetoğlu,
+                    
+                    Erdem Yörük,
+                    
+                    Deniz Yüret,
+                    
+                    Osman Mutlu,
+                    
+                    Çağrı Yoltar,
+                    
+                    Fırat Duruşan,
+                    
+                    Burak Gürel
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/YN8fkglNA-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_54.html" class="main-title">
+                  <span class="h6">
+                    Sampo: Unsupervised Knowledge Base Construction for Opinions and Implications
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Nikita Bhutani,
+                    
+                    Aaron Traylor,
+                    
+                    Chen Chen,
+                    
+                    Xiaolan Wang,
+                    
+                    Behzad Golshan,
+                    
+                    Wang-Chiew Tan
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/1hLH6CKIjN-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_42.html" class="main-title">
+                  <span class="h6">
+                    XREF: Entity Linking for Chinese News Comments with Supplementary Article Reference
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Xinyu Hua,
+                    
+                    Lei Li,
+                    
+                    Lifeng Hua,
+                    
+                    Lu Wang
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/fR44nF03Rb-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_26.html" class="main-title">
+                  <span class="h6">
+                    Contrastive Entity Linkage: Mining Variational Attributes from Large Catalogs for Entity Linkage
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Varun Embar,
+                    
+                    Bunyamin Sisman,
+                    
+                    Hao Wei,
+                    
+                    Xin Luna Dong,
+                    
+                    Christos Faloutsos,
+                    
+                    Lise Getoor
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/-oXaOxy6up-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_69.html" class="main-title">
+                  <span class="h6">
+                    Enriching Large-Scale Eventuality Knowledge Graph with Entailment Relations
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Changlong Yu,
+                    
+                    Hongming Zhang,
+                    
+                    Yangqiu Song,
+                    
+                    Wilfred Ng,
+                    
+                    Lifeng Shang
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/ToTf_MX7Vn-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_14.html" class="main-title">
+                  <span class="h6">
+                    Learning Relation Entailment with Structured and Textual Information
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Zhengbao Jiang,
+                    
+                    Jun Araki,
+                    
+                    Donghan Yu,
+                    
+                    Ruohong Zhang,
+                    
+                    Wei Xu,
+                    
+                    Yiming Yang,
+                    
+                    Graham Neubig
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/J246NSqR_l-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_91.html" class="main-title">
+                  <span class="h6">
+                    Representing Joint Hierarchies with Box Embeddings
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Dhruvesh Patel,
+                    
+                    Shib Sankar Dasgupta,
+                    
+                    Michael Boratko,
+                    
+                    Xiang Li,
+                    
+                    Luke Vilnis,
+                    
+                    Andrew McCallum
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/pJg1LahGc0-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_49.html" class="main-title">
+                  <span class="h6">
+                    Predicting Institution Hierarchies with Set-based Models
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Derek Tam,
+                    
+                    Nicholas Monath,
+                    
+                    Ari Kobren,
+                    
+                    Andrew McCallum
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      lazyLoader();
+    </script>
+  </div>
+  
+  <div
+    class="tab-pane"
+    id="tab-d3"
+    role="tabpanel"
+  >
+    <div id="d3">
+      <!-- Speakers -->
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Speakers</h3>
+  </div>
+</div>
+      <div class="speakers">
+        <div class="row p-1">
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/jberant.png" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_jberant.html" class="main-title">
+                  Symbolic and distributed representations for question answering
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Jonathan Berant  /  Tel Aviv University / Allen Institute for AI
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="http://www.cs.tau.ac.il/~joberant/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Models for question answering (QA) have been dominated recently by fully differentiable neural networks, based on large pre-trained language models. However, when answering a question requires multiple reasoning steps, symbolic approaches offer a natural and often more interpretable alternative. In this talk, I will describe recent work that focuses on the pros and cons of symbolic and distributed approaches for question answering. First, I will describe QDMR, a symbolic meaning representation for questions, inspired by semantic parsing, that can be annotated at scale by non-experts. QDMR was used to annotate BREAK: a benchmark for question understanding that contains 83K questions with their meaning representation from 10 existing datasets across three modalities. Then, I will show how a symbolic representation, such as QDMR, can be used to (a) improve accuracy on open-domain QA benchmarks that require multiple retrieval steps (b) improve the faithfulness of compositional neural networks for answering complex questions. I will then move to two cases where end-to-end differentiable models provide advantages over symbolic approaches. Specifically, one can automatically generate data at scale for both numerical and logical reasoning, and easily endow pre-trained language models with those missing capabilities for answering complex questions.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/bvandurme.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_bvandurme.html" class="main-title">
+                  Embracing uncertainty as the target of prediction
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Benjamin Van Durme  /  John Hopkins University
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="https://www.cs.jhu.edu/~vandurme/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              The Information Extraction and Computational Semantics communities are largely dominated by resources and models that strive for extracting what an observation categorically supports as a true prediction. E.g., "this image is of a CAT", or "that token sequence refers to an ORGANIZATION", or "this sentence ENTAILS that other sentence". As humans we recognize that observations can be ambiguous as to what predictions they evince, but we seem to forget that when building datasets, and then blindly aim to reproduce those annotations when building models. I will discuss a series of projects that explore annotating and modeling subjective likelihood assessments, with a focus on tasks such as semantic parsing and textual entailment. For example, the sentence "Someone is walking a dog in a park" may be interpreted as strong evidence for, "The dog is alive", weak evidence for, "The sun is shining", and cast doubt on (but not strictly "contradict"), "The park is on fire". While our work has concentrated on text, the point applies broadly: how often have you done an image captcha and had hesitation on whether that one picture contained a "bridge"? Let's agree that sometimes the right answer is "maybe".
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/trekatsinas.jpg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_trekatsinas.html" class="main-title">
+                  Automating Data Quality Management
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Theodoros Rekatsinas  /  University of Wisconsin-Madison
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="http://pages.cs.wisc.edu/~thodrek/">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Data quality management is a bottleneck in modern analytics as high-effort tasks such as data validation and cleaning are essential to obtain accurate results. This talk describes how to use machine learning to automate routine data quality management tasks. I will first introduce Probabilistic Unclean Databases (PUDs), a formal probabilistic framework to describe the quality of structured data and demonstrate how data validation and cleaning correspond to learning and inference problems over structured data distributions. I will then show how the PUDs framework forms the basis of the HoloClean framework, a state-of-the-art ML-based solution to automate data quality management for structured data. Finally, I will close with a discussion on lessons learned from HoloClean with particular emphasis on when accurate, automated data cleaning is feasible.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+          
+  <div class="col-md-6 col-sm-12 fluid">
+          
+    <div class="card m-2">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <img src="https://akbc.ws/2020/assets/img/people/hji.png" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-lg-9 col-md-12">
+            <div class="m-1 text-muted">
+              <h5>
+                <a href="speaker_hji.html" class="main-title">
+                  Event-centric Knowledge Base Construction
+                </a>
+              </h5>
+            </div>
+            <div class="m-1 text-muted">
+              <span class="card-title h5">
+                Heng Ji  /  University of Illinois Urbana-Champaign
+              </span>
+            </div>
+            <div class="m-1 text-muted">
+              <a class="card-link" href="http://blender.cs.illinois.edu/hengji.html">
+                Homepage
+              </a>
+              
+            </div>
+          <!-- <div class="m-3">
+              Understanding events and communicating about them are fundamental human activities. However, it's much more difficulty to populate event-related knowledge compared to entity-related knowledge. For example, most people in the United States will be able to answer the question "Who is President Barack Obama’s wife?", but very few people can give a complete answer to "Who died in September 11 attacks?". We propose a new research direction on event-centric knowledge base construction from multimedia multilingual sources. Our minds represent events at various levels of granularity and abstraction, which allows us to quickly access and reason about old and new scenarios. Progress in natural language understanding and computer vision has helped automate some parts of event understanding but the current, first-generation, automated event understanding is overly simplistic since it is local, sequential and flat. Real events are hierarchical and probabilistic. Understanding them requires knowledge in the form of a repository of abstracted event schemas (complex event templates), understanding the progress of time, using background knowledge, and performing global inference. Our approach to second-generation event understanding builds on an incidental supervision approach to inducing an event schema repository that is probabilistic, hierarchically organized and semantically coherent. Low level primitive components of event schemas are abundant, and can be part of multiple, sparsely occurring, higher-level schemas. Consequently, we combine bottom-up data driven approaches across multiple modalities with top-down consolidation of information extracted from a smaller number of encyclopedic resources. This facilitates inducing higher-level event and time representations analysts can interact with, and allow them to guide further reasoning and extract events by constructing a novel structured cross-media common semantic space. When complex events unfold in an emergent and dynamic manner, the multimedia multilingual digital data from traditional news media and social media often convey conflicting information. To understand the many facets of such complex, dynamic situations, we have also developed cross-media cross-document event coreference resolution and event-event relation tracking methods for event-centric knowledge population.
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+      </div>
+      
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Papers</h3>
+  </div>
+</div>
+      <div class="papers">
+        <div id="papergroup3" class="row mb-4">
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/ajrveGQBl0-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_10.html" class="main-title">
+                  <span class="h6">
+                    Dolores: Deep Contextualized Knowledge Graph Embeddings
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Haoyu Wang,
+                    
+                    Vivek Kulkarni,
+                    
+                    William Yang Wang
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/fCQvGMT57w-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_18.html" class="main-title">
+                  <span class="h6">
+                    IterefinE: Iterative KG Refinement Embeddings using Symbolic Knowledge
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Siddhant Arora,
+                    
+                    Srikanta Bedathur,
+                    
+                    Maya Ramanath,
+                    
+                    Deepak Sharma
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/QnPV72SZVt-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_2.html" class="main-title">
+                  <span class="h6">
+                    Joint Reasoning for Multi-Faceted Commonsense Knowledge
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Yohan Chalier,
+                    
+                    Simon Razniewski,
+                    
+                    Gerhard Weikum
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/Ie2Y94Ty8K-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_35.html" class="main-title">
+                  <span class="h6">
+                    Knowledge Graph Simple Question Answering for Unseen Domains
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Georgios Sidiropoulos,
+                    
+                    Nikos Voskarides,
+                    
+                    Evangelos Kanoulas
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/nqYhFwaUj-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_55.html" class="main-title">
+                  <span class="h6">
+                    OxKBC: Outcome Explanation for Factorization Based Knowledge Base Completion
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Yatin Nandwani,
+                    
+                    Ankesh Gupta,
+                    
+                    Aman Agrawal,
+                    
+                    Mayank Singh Chauhan,
+                    
+                    Parag Singla,
+                    
+                    Mausam
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/pSLmyZKaS-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_4.html" class="main-title">
+                  <span class="h6">
+                    Enriching Knowledge Bases with Interesting Negative Statements
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Hiba Arnaout,
+                    
+                    Simon Razniewski,
+                    
+                    Gerhard Weikum
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/EQrvONEwh-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_50.html" class="main-title">
+                  <span class="h6">
+                    Semi-Automating Knowledge Base Construction for Cancer Genetics
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Somin Wadhwa,
+                    
+                    Kanhua Yin,
+                    
+                    Kevin S. Hughes,
+                    
+                    Byron Wallace
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/3pcecaCEK--teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_81.html" class="main-title">
+                  <span class="h6">
+                    Ranking vs. Classifying: Measuring Knowledge Base Completion Quality
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Marina Speranskaya,
+                    
+                    Martin Schmitt,
+                    
+                    Benjamin Roth
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/BSUYfTada3-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_6.html" class="main-title">
+                  <span class="h6">
+                    Exploiting Semantic Relations for Fine-grained Entity Typing
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Hongliang Dai,
+                    
+                    Yangqiu Song,
+                    
+                    Xin Li
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/SOEJGCE76x-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_76.html" class="main-title">
+                  <span class="h6">
+                    Knowledge Graph Embedding Compression
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Mrinmaya Sachan
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/3-Tc21z1Ub-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_12.html" class="main-title">
+                  <span class="h6">
+                    Learning Credal Sum-Product Networks
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    Amelie Levray,
+                    
+                    Vaishak Belle
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+            
+    <div class="col-md-6 col-sm-12 fluid">
+            
+      <div class="card m-2">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <img
+              class="img-thumbnail"
+              src="https://akbc.ws/2020/assets/suppl/shkmWLRBXH-teaser.png"
+              width="100%"
+              />
+            </div>
+            <div class="col-lg-9 col-md-12">
+              <div class="text-muted">
+                <a href="poster_87.html" class="main-title">
+                  <span class="h6">
+                    TransINT: Embedding Implication Rules in Knowledge Graphs with Isomorphic Intersections of Linear Subspaces
+                  </span>
+                </a>
+              </div>
+              <div class="text-muted">
+                <span class="h6">
+                    
+                    So Yeon Min,
+                    
+                    Preethi Raghavan,
+                    
+                    Peter Szolovits
+                    
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      lazyLoader();
+    </script>
+  </div>
+  
+  <div
+    class="tab-pane"
+    id="tab-d4"
+    role="tabpanel"
+  >
+    <div id="d4">
+      <!-- Speakers -->
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Speakers</h3>
+  </div>
+</div>
+      <div class="speakers">
+        <div class="row p-1">
+  
+</div>
+      </div>
+      
+      <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Papers</h3>
+  </div>
+</div>
+      <div class="papers">
+        <div id="papergroup4" class="row mb-4">
+  
+</div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      lazyLoader();
+    </script>
+  </div>
+  
+
+</div>
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 AKBC Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

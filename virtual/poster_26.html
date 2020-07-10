@@ -1,0 +1,376 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/breadcrumb.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cuprum"
+      rel="stylesheet"
+    />
+
+    <title>AKBC 2020: Contrastive Entity Linkage: Mining Variational Attributes from Large Catalogs for Entity Linkage</title>
+    
+<meta name="citation_title" content="Contrastive Entity Linkage: Mining Variational Attributes from Large Catalogs for Entity Linkage" />
+
+<meta name="citation_author" content="Varun Embar" />
+
+<meta name="citation_author" content="Bunyamin Sisman" />
+
+<meta name="citation_author" content="Hao Wei" />
+
+<meta name="citation_author" content="Xin Luna Dong" />
+
+<meta name="citation_author" content="Christos Faloutsos" />
+
+<meta name="citation_author" content="Lise Getoor" />
+
+<meta name="citation_publication_date" content="June 22-25 2020" />
+<meta name="citation_conference_title" content="Automated Knowledge Base Construction" />
+<meta name="citation_inbook_title" content="Proceedings of the Second AKBC Conference" />
+<meta name="citation_abstract" content="Presence of near identical, but distinct, entities called entity variations makes the task of data integration challenging. For example, in the domain of grocery products, variations share the same value for attributes such as brand, manufacturer and product line, but differ in other attributes, called variational attributes, such as package size and color. Identifying variations across data sources is an important task in itself and is crucial for identifying duplicates. However, this task is challenging as the variational attributes are often present as a part of unstructured text and are domain dependent. In this work, we propose our approach, Contrastive entity linkage, to identify both entity pairs that are the same and pairs that are variations of each other. We propose a novel unsupervised approach, VarSpot, to mine domain-dependent variational attributes present in unstructured text. The proposed approach reasons about both similarities and differences between entities and can easily scale to large sources containing millions of entities. We show the generality of our approach by performing experimental evaluation on three different domains. Our approach significantly outperforms state-of-the-art learning-based and rule-based entity linkage systems by up to 4% F1 score when identifying duplicates, and up to 41% when identifying entity variations." />
+
+<meta name="citation_keywords" content="entity resolution" />
+
+<meta name="citation_keywords" content="entity linkage" />
+
+<meta name="citation_keywords" content="variations" />
+
+<meta name="citation_keywords" content="product linkage" />
+
+<meta name="citation_keywords" content="product catalogs" />
+
+<meta name="citation_pdf_url" content="/pdf/328eed7cd685a1682ca22a7847de7bc08995baf9.pdf" />
+
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!-- ('live.html', 'Live', 1),
+    ('recommended.html', 'Recommended', 1),
+    ('about.html', 'Help', 0),
+    ('chat.html', 'Chat', 1), -->
+
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+             class="logo" src="https://akbc.ws/2020/assets/img/logo_notext.png"
+             height="auto"
+             width="50px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">AKBC 2020</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="https://akbc.ws/2020">AKBC 2020</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<ul class="breadcrumb">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/papers.html">Papers</a></li>
+  <li>Paper 26</li>
+</ul>
+
+<!-- Title -->
+
+<div class="">
+<div class="card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      Contrastive Entity Linkage: Mining Variational Attributes from Large Catalogs for Entity Linkage
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      
+      <a href="papers.html?filter=authors&search=Varun Embar" class="text-muted"
+        >Varun Embar</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Bunyamin Sisman" class="text-muted"
+        >Bunyamin Sisman</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Hao Wei" class="text-muted"
+        >Hao Wei</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Xin Luna Dong" class="text-muted"
+        >Xin Luna Dong</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Christos Faloutsos" class="text-muted"
+        >Christos Faloutsos</a
+      >,
+      
+      <a href="papers.html?filter=authors&search=Lise Getoor" class="text-muted"
+        >Lise Getoor</a
+      >
+      
+    </h3>
+    <div class="text-center p-3">
+      <img src="https://akbc.ws/2020/assets/suppl/fR44nF03Rb-teaser.png" width="40%" class="img-thumbnail" />
+    </div>
+    
+    <p class="card-text text-center">
+      <span class="">Keywords:</span>
+      
+      <a
+        href="papers.html?filter=keywords&search=entity resolution"
+        class="text-secondary text-decoration-none"
+        >entity resolution</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=entity linkage"
+        class="text-secondary text-decoration-none"
+        >entity linkage</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=variations"
+        class="text-secondary text-decoration-none"
+        >variations</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=product linkage"
+        class="text-secondary text-decoration-none"
+        >product linkage</a
+      >,
+      
+      <a
+        href="papers.html?filter=keywords&search=product catalogs"
+        class="text-secondary text-decoration-none"
+        >product catalogs</a
+      >
+      
+    </p>
+    
+    
+    <p class="card-text text-center">
+      <span class="">TLDR:</span>
+      A novel unsupervised approach to mine domain-dependent variational attributes present in unstructured text and use it to identify entity pairs that are the same and pairs that are variations of each other.
+    </p>
+    
+    <div class="text-center p-3">
+      <a class="card-link" data-toggle="collapse" role="button" href="#details">
+        Abstract
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://akbc.ws/2020/papers/fR44nF03Rb">
+        AKBC
+      </a>
+      
+      <a class="card-link" target="_blank" href="https://openreview.net/forum?id=fR44nF03Rb">
+        OpenReview
+      </a>
+      
+        <a class="card-link" target="_blank" href="https://akbc.ws/2020/assets/pdfs/fR44nF03Rb.pdf">
+        <!-- href="https://openreview.net/pdf?id=fR44nF03Rb" -->
+          PDF
+        </a>
+      
+      
+    </div>
+  </div>
+</div>
+</div>
+<div id="details" class="card m-3 collapse">
+  <div class="card-body">
+    <div class="card-text">
+      <div id="abstractExample">
+        <span class="font-weight-bold">Abstract:</span>
+        Presence of near identical, but distinct, entities called entity variations makes the task of data integration challenging. For example, in the domain of grocery products, variations share the same value for attributes such as brand, manufacturer and product line, but differ in other attributes, called variational attributes, such as package size and color. Identifying variations across data sources is an important task in itself and is crucial for identifying duplicates. However, this task is challenging as the variational attributes are often present as a part of unstructured text and are domain dependent. In this work, we propose our approach, Contrastive entity linkage, to identify both entity pairs that are the same and pairs that are variations of each other. We propose a novel unsupervised approach, VarSpot, to mine domain-dependent variational attributes present in unstructured text. The proposed approach reasons about both similarities and differences between entities and can easily scale to large sources containing millions of entities. We show the generality of our approach by performing experimental evaluation on three different domains. Our approach significantly outperforms state-of-the-art learning-based and rule-based entity linkage systems by up to 4% F1 score when identifying duplicates, and up to 41% when identifying entity variations.
+      </div>
+    </div>
+    <p></p>
+  </div>
+</div>
+
+<div class="row">
+  
+  <div class="p-3 col-md-8 text-center">
+  <iframe width="100%" height="500" src="https://www.youtube.com/embed/qLv5G-lhLXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="col-md-4 col-sm-12">
+    <!-- <div class="row p-3">
+  <div class="col-12 bd-content">
+    <h3>Slides</h3>
+  </div>
+</div> -->
+    <a href="/static/slides/fR44nF03Rb-slides.pdf">Download Slides</a>
+    <div style="height:500px;overflow-y:scroll;">
+    <div role="main" id="slides_pdf_view"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.3.200/build/pdf.min.js"></script>
+  <script src="static/js/pdf_render_all.js"></script>
+  <script>
+      $(document).ready(() => {
+          // render all the pages of the PDF
+          // PDF name can be bound to variable -- e.g. paper.content.poster_link
+          initPDFViewer("/static/slides/fR44nF03Rb-slides.pdf",'#slides_pdf_view');
+      })
+  </script>
+  
+</div>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2020 AKBC Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>
