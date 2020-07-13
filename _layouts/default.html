@@ -15,7 +15,7 @@ layout: compress
 	{% include _masthead.html %}
 	{{ content }}
 
-	{% unless page.skip_boilerplate %}
+	{% unless page.skip_boilerplate or page.skip_footer %}
 	{% include _footer.html %}
 	{% endunless %}
 
