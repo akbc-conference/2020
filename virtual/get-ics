@@ -6,78 +6,6 @@ PRODID:ics.py - http://git.io/lLljaA
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgworkshops.html
-
-DTEND:20200625T200000Z
-
-LOCATION:https://akbc.apps.allenai.orgworkshops.html
-
-DTSTART:20200625T150000Z
-
-SUMMARY:Workshops
-
-UID:6a404835-29a3-43fd-a2a9-fa9f32f0a7b0@6a40.org
-
-URL:https://akbc.apps.allenai.orgworkshops.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_trekatsinas.html
-
-DTEND:20200624T190000Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_trekatsinas.html
-
-DTSTART:20200624T182500Z
-
-SUMMARY:Invited: Theodoros Rekatsinas
-
-UID:a077bfc2-8427-439e-b2ef-99b50299173e@a077.org
-
-URL:https://akbc.apps.allenai.orgspeaker_trekatsinas.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d1posters.html
-
-DTEND:20200622T182000Z
-
-LOCATION:https://akbc.apps.allenai.orgsession_d1posters.html
-
-DTSTART:20200622T172000Z
-
-SUMMARY:Day 1 Poster Session
-
-UID:6490a582-3e26-44b2-8a71-ccb84f55653e@6490.org
-
-URL:https://akbc.apps.allenai.orgsession_d1posters.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_bvandurme.html
-
-DTEND:20200624T162500Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_bvandurme.html
-
-DTSTART:20200624T155000Z
-
-SUMMARY:Invited: Benjamin Van Durme
-
-UID:df7457ad-5354-492c-a779-104f75ca7b2d@df74.org
-
-URL:https://akbc.apps.allenai.orgspeaker_bvandurme.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
 DESCRIPTION:https://akbc.apps.allenai.orgspeaker_lzettlemoyer.html
 
 DTEND:20200623T193500Z
@@ -88,7 +16,7 @@ DTSTART:20200623T190000Z
 
 SUMMARY:Invited: Luke Zettlemoyer
 
-UID:bc13fce5-9106-4c12-8f57-61b6014baad4@bc13.org
+UID:9a254552-e811-4c54-931d-b28a6d22b2f6@9a25.org
 
 URL:https://akbc.apps.allenai.orgspeaker_lzettlemoyer.html
 
@@ -96,109 +24,109 @@ END:VEVENT
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d2posters.html
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d1hallway.html
 
-DTEND:20200623T224500Z
+DTEND:20200622T203000Z
 
-LOCATION:https://akbc.apps.allenai.orgsession_d2posters.html
+LOCATION:https://akbc.apps.allenai.orgsession_d1hallway.html
 
-DTSTART:20200623T214500Z
+DTSTART:20200622T193000Z
 
-SUMMARY:Day 2 Poster Session
+SUMMARY:Day 1 Hallway Chats
 
-UID:1fcfc4f3-98f5-4dc2-8d1b-b74c38783ee7@1fcf.org
+UID:05aed790-c8dc-4c70-86ee-ffebb6fe46af@05ae.org
 
-URL:https://akbc.apps.allenai.orgsession_d2posters.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d1posters.html
-
-DTEND:20200622T172000Z
-
-LOCATION:https://akbc.apps.allenai.orgsession_d1posters.html
-
-DTSTART:20200622T163000Z
-
-SUMMARY:Day 1 Lightning Talks
-
-UID:12792758-4a83-440f-b321-fdc6c41839e7@1279.org
-
-URL:https://akbc.apps.allenai.orgsession_d1posters.html
+URL:https://akbc.apps.allenai.orgsession_d1hallway.html
 
 END:VEVENT
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d2posters.html
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d3posters.html
 
-DTEND:20200623T214500Z
+DTEND:20200624T172500Z
 
-LOCATION:https://akbc.apps.allenai.orgsession_d2posters.html
+LOCATION:https://akbc.apps.allenai.orgsession_d3posters.html
 
-DTSTART:20200623T204500Z
+DTSTART:20200624T162500Z
 
-SUMMARY:Day 2 Lightning Talks
+SUMMARY:Day 3 Lightning Talks
 
-UID:78a75c20-2d90-4660-8ba4-a9417d02369f@78a7.org
+UID:46262c76-3139-4a31-a414-72c3f18af249@4626.org
 
-URL:https://akbc.apps.allenai.orgsession_d2posters.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d3hallway.html
-
-DTEND:20200624T203500Z
-
-LOCATION:https://akbc.apps.allenai.orgsession_d3hallway.html
-
-DTSTART:20200624T193500Z
-
-SUMMARY:Day 3 Hallway Chats
-
-UID:1c6af53e-2b7b-42c2-a02b-f15f298aaf69@1c6a.org
-
-URL:https://akbc.apps.allenai.orgsession_d3hallway.html
+URL:https://akbc.apps.allenai.orgsession_d3posters.html
 
 END:VEVENT
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_hji.html
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_jleskovec.html
 
-DTEND:20200624T193500Z
+DTEND:20200622T163000Z
 
-LOCATION:https://akbc.apps.allenai.orgspeaker_hji.html
+LOCATION:https://akbc.apps.allenai.orgspeaker_jleskovec.html
 
-DTSTART:20200624T190000Z
+DTSTART:20200622T155500Z
 
-SUMMARY:Invited: Heng Ji
+SUMMARY:Invited: Jure Leskovec
 
-UID:68cb0c44-5797-4f04-95d3-f7a8d8c76a9b@68cb.org
+UID:e2e323bf-5564-4333-bbcb-80d1ef83d43e@e2e3.org
 
-URL:https://akbc.apps.allenai.orgspeaker_hji.html
+URL:https://akbc.apps.allenai.orgspeaker_jleskovec.html
 
 END:VEVENT
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_ldong.html
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_asu.html
 
-DTEND:20200622T193000Z
+DTEND:20200623T232000Z
 
-LOCATION:https://akbc.apps.allenai.orgspeaker_ldong.html
+LOCATION:https://akbc.apps.allenai.orgspeaker_asu.html
 
-DTSTART:20200622T185500Z
+DTSTART:20200623T224500Z
 
-SUMMARY:Invited: Xin Luna Dong
+SUMMARY:Invited: Andrew Su
 
-UID:405b611a-1047-4ab6-8f70-5734259d613a@405b.org
+UID:d55cac96-d47d-4348-acfa-e6cf03672cd7@d55c.org
 
-URL:https://akbc.apps.allenai.orgspeaker_ldong.html
+URL:https://akbc.apps.allenai.orgspeaker_asu.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_wcohen.html
+
+DTEND:20200622T155500Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_wcohen.html
+
+DTSTART:20200622T152000Z
+
+SUMMARY:Invited: William Cohen
+
+UID:652cb9fa-2fce-4f48-9dfc-2794090fed33@652c.org
+
+URL:https://akbc.apps.allenai.orgspeaker_wcohen.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgworkshops.html
+
+DTEND:20200625T200000Z
+
+LOCATION:https://akbc.apps.allenai.orgworkshops.html
+
+DTSTART:20200625T150000Z
+
+SUMMARY:Workshops
+
+UID:cadd493e-0a95-46d3-9715-d3823fe07e9f@cadd.org
+
+URL:https://akbc.apps.allenai.orgworkshops.html
 
 END:VEVENT
 
@@ -214,9 +142,81 @@ DTSTART:20200623T193500Z
 
 SUMMARY:Invited: Ndapandula Nakashole
 
-UID:f3ecc458-dbf5-4fb8-a6ab-53f8c140f05c@f3ec.org
+UID:daab1fe7-baee-4208-9d8a-654803f2314e@daab.org
 
 URL:https://akbc.apps.allenai.orgspeaker_nnakashole.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_dyang.html
+
+DTEND:20200623T235500Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_dyang.html
+
+DTSTART:20200623T232000Z
+
+SUMMARY:Invited: Diyi Yang
+
+UID:c9450a75-5d41-476d-b167-52e2aec0c27c@c945.org
+
+URL:https://akbc.apps.allenai.orgspeaker_dyang.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_jberant.html
+
+DTEND:20200624T155000Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_jberant.html
+
+DTSTART:20200624T151500Z
+
+SUMMARY:Invited: Jonathan Berant
+
+UID:15848090-911b-48ef-a5c3-8f3ada74493f@1584.org
+
+URL:https://akbc.apps.allenai.orgspeaker_jberant.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_bvandurme.html
+
+DTEND:20200624T162500Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_bvandurme.html
+
+DTSTART:20200624T155000Z
+
+SUMMARY:Invited: Benjamin Van Durme
+
+UID:52b2c533-7a04-4a65-99f3-68943b293cbf@52b2.org
+
+URL:https://akbc.apps.allenai.orgspeaker_bvandurme.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d3hallway.html
+
+DTEND:20200624T203500Z
+
+LOCATION:https://akbc.apps.allenai.orgsession_d3hallway.html
+
+DTSTART:20200624T193500Z
+
+SUMMARY:Day 3 Hallway Chats
+
+UID:b9d1405b-dfe2-422b-9cd0-c637f9ac2e56@b9d1.org
+
+URL:https://akbc.apps.allenai.orgsession_d3hallway.html
 
 END:VEVENT
 
@@ -232,7 +232,7 @@ DTSTART:20200623T235500Z
 
 SUMMARY:Day 2 Hallway Chats
 
-UID:4fee4955-a40a-4396-9b87-043c3bb5fada@4fee.org
+UID:ea5578f3-f690-4d6b-8920-f79962854d57@ea55.org
 
 URL:https://akbc.apps.allenai.orgsession_d2hallway.html
 
@@ -250,135 +250,9 @@ DTSTART:20200622T150000Z
 
 SUMMARY:Opening Remarks
 
-UID:0b8188c8-6952-4a3e-ba90-d45ea1179791@0b81.org
+UID:8c950b77-c823-4c1e-8c3b-21b0650f5c12@8c95.org
 
 URL:https://akbc.apps.allenai.org
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_jleskovec.html
-
-DTEND:20200622T163000Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_jleskovec.html
-
-DTSTART:20200622T155500Z
-
-SUMMARY:Invited: Jure Leskovec
-
-UID:f9b213fa-e32a-4a7f-a2a4-dd16f1528026@f9b2.org
-
-URL:https://akbc.apps.allenai.orgspeaker_jleskovec.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d1hallway.html
-
-DTEND:20200622T203000Z
-
-LOCATION:https://akbc.apps.allenai.orgsession_d1hallway.html
-
-DTSTART:20200622T193000Z
-
-SUMMARY:Day 1 Hallway Chats
-
-UID:a5b7e546-ab7b-4da7-bee6-3c84d3403e9e@a5b7.org
-
-URL:https://akbc.apps.allenai.orgsession_d1hallway.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_asu.html
-
-DTEND:20200623T232000Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_asu.html
-
-DTSTART:20200623T224500Z
-
-SUMMARY:Invited: Andrew Su
-
-UID:824a52bf-f016-4293-9bab-984aedf7a876@824a.org
-
-URL:https://akbc.apps.allenai.orgspeaker_asu.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_dyang.html
-
-DTEND:20200623T235500Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_dyang.html
-
-DTSTART:20200623T232000Z
-
-SUMMARY:Invited: Diyi Yang
-
-UID:00f4657f-25fa-4e19-9837-a8d9cc2c6e20@00f4.org
-
-URL:https://akbc.apps.allenai.orgspeaker_dyang.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_wcohen.html
-
-DTEND:20200622T155500Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_wcohen.html
-
-DTSTART:20200622T152000Z
-
-SUMMARY:Invited: William Cohen
-
-UID:1a1b9121-37be-4b07-8491-f5e5f1d4edfc@1a1b.org
-
-URL:https://akbc.apps.allenai.orgspeaker_wcohen.html
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.org
-
-DTEND:20200624T204500Z
-
-LOCATION:https://akbc.apps.allenai.org
-
-DTSTART:20200624T203500Z
-
-SUMMARY:Closing Remarks
-
-UID:7fdf59a5-6a32-427e-aa05-1b4b0049f99e@7fdf.org
-
-URL:https://akbc.apps.allenai.org
-
-END:VEVENT
-
-BEGIN:VEVENT
-
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_estrubell.html
-
-DTEND:20200623T204500Z
-
-LOCATION:https://akbc.apps.allenai.orgspeaker_estrubell.html
-
-DTSTART:20200623T201000Z
-
-SUMMARY:Invited: Emma Strubell
-
-UID:e59a5842-3233-46b3-8e08-6cf1461e5415@e59a.org
-
-URL:https://akbc.apps.allenai.orgspeaker_estrubell.html
 
 END:VEVENT
 
@@ -394,9 +268,117 @@ DTSTART:20200624T172500Z
 
 SUMMARY:Day 3 Poster Session
 
-UID:e10f4a53-7a98-4afe-af2e-199aee083a79@e10f.org
+UID:ea246e24-944e-44b1-bb4a-49dc2f0f53d7@ea24.org
 
 URL:https://akbc.apps.allenai.orgsession_d3posters.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_estrubell.html
+
+DTEND:20200623T204500Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_estrubell.html
+
+DTSTART:20200623T201000Z
+
+SUMMARY:Invited: Emma Strubell
+
+UID:0859b3fa-a518-41c5-a206-d713591aa191@0859.org
+
+URL:https://akbc.apps.allenai.orgspeaker_estrubell.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_trekatsinas.html
+
+DTEND:20200624T190000Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_trekatsinas.html
+
+DTSTART:20200624T182500Z
+
+SUMMARY:Invited: Theodoros Rekatsinas
+
+UID:9d06c8ad-f904-40be-a63e-02bb82b8bf37@9d06.org
+
+URL:https://akbc.apps.allenai.orgspeaker_trekatsinas.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d1posters.html
+
+DTEND:20200622T182000Z
+
+LOCATION:https://akbc.apps.allenai.orgsession_d1posters.html
+
+DTSTART:20200622T172000Z
+
+SUMMARY:Day 1 Poster Session
+
+UID:047cf8e9-6dce-4ff8-938e-4f42c1e5f720@047c.org
+
+URL:https://akbc.apps.allenai.orgsession_d1posters.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_ldong.html
+
+DTEND:20200622T193000Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_ldong.html
+
+DTSTART:20200622T185500Z
+
+SUMMARY:Invited: Xin Luna Dong
+
+UID:9fe1688d-6448-450c-8120-0a171598678d@9fe1.org
+
+URL:https://akbc.apps.allenai.orgspeaker_ldong.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgspeaker_hji.html
+
+DTEND:20200624T193500Z
+
+LOCATION:https://akbc.apps.allenai.orgspeaker_hji.html
+
+DTSTART:20200624T190000Z
+
+SUMMARY:Invited: Heng Ji
+
+UID:930f6cd3-4511-484c-85db-bcf450a2b986@930f.org
+
+URL:https://akbc.apps.allenai.orgspeaker_hji.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.org
+
+DTEND:20200624T204500Z
+
+LOCATION:https://akbc.apps.allenai.org
+
+DTSTART:20200624T203500Z
+
+SUMMARY:Closing Remarks
+
+UID:84d6364b-824a-4fd2-bebd-76d2c229507a@84d6.org
+
+URL:https://akbc.apps.allenai.org
 
 END:VEVENT
 
@@ -412,7 +394,7 @@ DTSTART:20200622T182000Z
 
 SUMMARY:Invited: Jamie Taylor
 
-UID:23d96369-3716-4a62-8162-8bcc7929a09b@23d9.org
+UID:5b7ef474-6228-414f-b86d-262204acccf6@5b7e.org
 
 URL:https://akbc.apps.allenai.orgspeaker_jtaylor.html
 
@@ -420,37 +402,55 @@ END:VEVENT
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgsession_d3posters.html
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d2posters.html
 
-DTEND:20200624T172500Z
+DTEND:20200623T224500Z
 
-LOCATION:https://akbc.apps.allenai.orgsession_d3posters.html
+LOCATION:https://akbc.apps.allenai.orgsession_d2posters.html
 
-DTSTART:20200624T162500Z
+DTSTART:20200623T214500Z
 
-SUMMARY:Day 3 Lightning Talks
+SUMMARY:Day 2 Poster Session
 
-UID:96a3eebb-dad3-4d05-9959-0e0922aedfe3@96a3.org
+UID:fb908f73-2f9b-4660-9e09-6845174f66f4@fb90.org
 
-URL:https://akbc.apps.allenai.orgsession_d3posters.html
+URL:https://akbc.apps.allenai.orgsession_d2posters.html
 
 END:VEVENT
 
 BEGIN:VEVENT
 
-DESCRIPTION:https://akbc.apps.allenai.orgspeaker_jberant.html
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d1posters.html
 
-DTEND:20200624T155000Z
+DTEND:20200622T172000Z
 
-LOCATION:https://akbc.apps.allenai.orgspeaker_jberant.html
+LOCATION:https://akbc.apps.allenai.orgsession_d1posters.html
 
-DTSTART:20200624T151500Z
+DTSTART:20200622T163000Z
 
-SUMMARY:Invited: Jonathan Berant
+SUMMARY:Day 1 Lightning Talks
 
-UID:e57c6226-a9eb-48b5-be5e-fbc753f7eea5@e57c.org
+UID:88072449-b4e7-4996-b20c-cae730d77b24@8807.org
 
-URL:https://akbc.apps.allenai.orgspeaker_jberant.html
+URL:https://akbc.apps.allenai.orgsession_d1posters.html
+
+END:VEVENT
+
+BEGIN:VEVENT
+
+DESCRIPTION:https://akbc.apps.allenai.orgsession_d2posters.html
+
+DTEND:20200623T214500Z
+
+LOCATION:https://akbc.apps.allenai.orgsession_d2posters.html
+
+DTSTART:20200623T204500Z
+
+SUMMARY:Day 2 Lightning Talks
+
+UID:6272e081-a9ff-42ec-8afc-ea15f68f0009@6272.org
+
+URL:https://akbc.apps.allenai.orgsession_d2posters.html
 
 END:VEVENT
 
