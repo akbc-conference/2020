@@ -24,7 +24,7 @@ format: paper-page
 
 			<!-- Authors -->
 			<h4 class="subheader">
-				{% assign num = this_paper.authorids | size %}
+				{% assign num = this_paper.authors | size %}
 				{% for i in (0..num) limit: num %}
 					{%- if this_paper.author_profiles[i] == "" -%}
 						{{- this_paper.authors[i] -}}

@@ -24,7 +24,7 @@
     <br>
     <!-- Authors -->
     <i>
-        {% assign num = include.p.authorids | size %}
+        {% assign num = include.p.authors | size %}
         {% for i in (0..num) limit: num %}
                 {{ include.p.authors[i] }}
             {%- if forloop.last == true -%}
