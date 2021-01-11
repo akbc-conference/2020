@@ -1,6 +1,11 @@
-- title: Home
+- title: AKBC 2020
   url: "/"
   side: left
+  dropdown:
+  - title: "AKBC 2019"
+    url: "https://akbc.ws/2019"
+  - title: "AKBC 2021"
+    url: "https://akbc.ws/2021"
 
 - title: Program
   url: "/papers/"
