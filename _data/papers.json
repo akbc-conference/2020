@@ -18,7 +18,8 @@
     "UID": "76",
     "author_profiles": [
       "~MRINMAYA_SACHAN2"
-    ]
+    ],
+    "doi": ""
   },
   {
     "keywords": [],
@@ -57,7 +58,8 @@
       "~Chandra_Bhagavatula1",
       "",
       "~Xiang_Ren1"
-    ]
+    ],
+    "doi": ""
   },
   {
     "keywords": [
@@ -99,7 +101,8 @@
       "~Nicholas_Monath1",
       "~Boris_Veytsman1",
       "~Andrew_McCallum1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5F592"
   },
   {
     "keywords": [
@@ -133,11 +136,12 @@
     "forum_id": "iHXV8UGYyL",
     "UID": "83",
     "author_profiles": [
-      "~Thibault_F\u00e9vry2",
+      "~Thibault_Fevry1",
       "~Nicholas_FitzGerald1",
       "~Livio_Baldini_Soares1",
       "~Tom_Kwiatkowski1"
-    ]
+    ],
+    "doi": "doi:10.24432/C59G6S"
   },
   {
     "keywords": [
@@ -176,7 +180,8 @@
       "~Lei_Li11",
       "",
       "~Lu_Wang1"
-    ]
+    ],
+    "doi": "doi:10.24432/C55P4V"
   },
   {
     "keywords": [],
@@ -215,9 +220,10 @@
       "",
       "~Tim_Rocktaeschel1",
       "~Yuxiang_Wu1",
-      "",
+      "~Alexander_Miller1",
       ""
-    ]
+    ],
+    "doi": "doi:10.24432/C5201W"
   },
   {
     "keywords": [
@@ -249,7 +255,8 @@
     "author_profiles": [
       "~Am\u00e9lie_Levray2",
       "~Vaishak_Belle1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5X59D"
   },
   {
     "keywords": [
@@ -282,7 +289,8 @@
       "~Haoyu_Wang2",
       "",
       "~William_Wang1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5SG64"
   },
   {
     "keywords": [
@@ -320,7 +328,8 @@
       "~Srikanta_J._Bedathur1",
       "~Maya_Ramanath1",
       "~Deepak_Sharma2"
-    ]
+    ],
+    "doi": "doi:10.24432/C5NP46"
   },
   {
     "keywords": [
@@ -353,7 +362,8 @@
       "~Hongliang_Dai1",
       "~Yangqiu_Song1",
       ""
-    ]
+    ],
+    "doi": "doi:10.24432/C5J017"
   },
   {
     "keywords": [
@@ -407,7 +417,8 @@
       "",
       "",
       ""
-    ]
+    ],
+    "doi": "doi:10.24432/C5D59R"
   },
   {
     "title": "Joint Reasoning for Multi-Faceted Commonsense Knowledge",
@@ -440,7 +451,8 @@
       "",
       "~Simon_Razniewski1",
       "~Gerhard_Weikum1"
-    ]
+    ],
+    "doi": "doi:10.24432/C58G6G"
   },
   {
     "keywords": [
@@ -478,10 +490,11 @@
     "UID": "30",
     "author_profiles": [
       "~Wonseok_Hwang1",
-      "",
+      "~Jinyeong_Yim1",
       "~Seunghyun_Park2",
       "~Minjoon_Seo1"
-    ]
+    ],
+    "doi": "doi:10.24432/C54S36"
   },
   {
     "keywords": [
@@ -517,7 +530,8 @@
       "~Hiba_Arnaout1",
       "~Simon_Razniewski1",
       "~Gerhard_Weikum1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5101K"
   },
   {
     "keywords": [
@@ -560,7 +574,8 @@
       "~Xin_Dong2",
       "",
       ""
-    ]
+    ],
+    "doi": "doi:10.24432/C5W88R"
   },
   {
     "keywords": [
@@ -600,7 +615,8 @@
       "",
       "",
       "~Byron_C_Wallace1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5RG6T"
   },
   {
     "keywords": [
@@ -648,7 +664,8 @@
       "",
       "~Yiming_Yang1",
       "~Graham_Neubig1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5MS3J"
   },
   {
     "keywords": [
@@ -682,7 +699,8 @@
       "~Georgios_Sidiropoulos1",
       "~Nikos_Voskarides1",
       "~Evangelos_Kanoulas1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5H01X"
   },
   {
     "keywords": [
@@ -723,7 +741,8 @@
       "~Bhavana_Dalvi1",
       "~Yejin_Choi1",
       "~Hannaneh_Hajishirzi1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5C883"
   },
   {
     "keywords": [
@@ -760,7 +779,8 @@
       "~Marina_Speranskaya1",
       "~Martin_Schmitt1",
       "~Benjamin_Roth2"
-    ]
+    ],
+    "doi": "doi:10.24432/C57G65"
   },
   {
     "keywords": [
@@ -797,7 +817,8 @@
       "~pouya_pezeshkpour1",
       "~Yifan_Tian1",
       "~Sameer_Singh1"
-    ]
+    ],
+    "doi": "doi:10.24432/C53S3W"
   },
   {
     "keywords": [
@@ -839,7 +860,8 @@
       "~Yunpu_Ma1",
       "~Stephan_G\u00fcnnemann1",
       "~Volker_Tresp1"
-    ]
+    ],
+    "doi": "doi:10.24432/C50018"
   },
   {
     "keywords": [
@@ -884,7 +906,8 @@
       "~Mayank_Singh_Chauhan1",
       "~Parag_Singla1",
       "~Mausam_Mausam2"
-    ]
+    ],
+    "doi": "doi:10.24432/C5V88F"
   },
   {
     "keywords": [
@@ -927,7 +950,8 @@
       "~So_Yeon_Min1",
       "~Preethi_Raghavan1",
       ""
-    ]
+    ],
+    "doi": "doi:10.24432/C5QG6H"
   },
   {
     "keywords": [
@@ -974,7 +998,8 @@
       "~Xiang_Li2",
       "~Luke_Vilnis1",
       "~Andrew_McCallum1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5KS37"
   },
   {
     "keywords": [
@@ -1016,7 +1041,8 @@
       "~Xiaolan_Wang2",
       "~Behzad_Golshan1",
       ""
-    ]
+    ],
+    "doi": "doi:10.24432/C5G01M"
   },
   {
     "keywords": [
@@ -1055,7 +1081,8 @@
       "~Nicholas_Monath1",
       "~Ari_Kobren1",
       "~Andrew_McCallum1"
-    ]
+    ],
+    "doi": "doi:10.24432/C5B88S"
   },
   {
     "keywords": [
@@ -1095,7 +1122,8 @@
       "~Yangqiu_Song1",
       "",
       "~Lifeng_Shang1"
-    ]
+    ],
+    "doi": "doi:10.24432/C56K5H"
   },
   {
     "keywords": [
@@ -1137,6 +1165,7 @@
       "~Shehzaad_Zuzar_Dhuliawala1",
       "",
       "~Andrew_McCallum1"
-    ]
+    ],
+    "doi": "doi:10.24432/C52S3K"
   }
 ]

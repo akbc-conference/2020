@@ -47,12 +47,12 @@ format: paper-page
 				{%- if this_paper.html -%}
 				<a class="button grey" href="{{-this_paper.html-}}">Website</a>
 				{%- endif -%}
-				<a class="button grey" href="https://openreview.net/forum?id={{-this_paper.forum_id-}}">OpenReview</a><a class="button" href="https://akbc.apps.allenai.org/poster_{{- this_paper.UID -}}.html">Live Event</a>
+				<a class="button grey" href="https://openreview.net/forum?id={{-this_paper.forum_id-}}">OpenReview</a><a class="button" href="https://akbc.ws/2020/virtual/poster_{{- this_paper.UID -}}.html">Slides/Video</a>
 			</div>
 			
-			<!-- <p>
+			<p>
 				<a href="https://doi.org/{{this_paper.doi}}">{{this_paper.doi}}</a>
-			</p> -->
+			</p>
 
 			<p class="teaser">
 				<h3>TL;DR</h3>
@@ -63,14 +63,13 @@ format: paper-page
 				{{ this_paper.abstract }}
 			</blockquote>
 
-			<!-- {% assign bibSize = this_paper._bibtex.size | minus: 2 %}
-			<pre>
-				{{- this_paper._bibtex | slice: 0, bibSize -}},
-	doi={ {{-this_paper.doi | remove: "doi:" -}} }
-	}</pre> -->
+			{% assign bibSize = this_paper._bibtex.size | minus: 2 %}
 	
 			<h4>Citation</h4>
-			<pre>{{- this_paper._bibtex -}}</pre>
+			<pre>
+			{{- this_paper._bibtex | slice: 0, bibSize -}},
+doi={ {{-this_paper.doi | remove: "doi:" -}} }
+}</pre>
 
 			{{ content }}
 
