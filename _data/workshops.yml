@@ -29,6 +29,7 @@
     - Sameer Singh
   openreview_ids:
     - ~pouya_pezeshkpour1
+    - ~Alice_Y_Wang1
     - ~Sameer_Singh1
   duration: Half-day
   abstract: "<p>Recently, there has been growing interest in combining knowledge bases and multiple modalities such as NLP, vision and speech. These combinations have resulted in improvements to various downstream tasks including question answering, image classification, object detection, and link prediction. The objectives of the KBMM workshop is to bring together researchers interested in (a) combining knowledge bases with other modalities to showcase more effective downstream tasks, (b) improving completion and construction of knowledge bases from multiple modalities, and in general, to share state-of-the-art approaches, best practices, and future directions.</p>
@@ -51,6 +52,12 @@
     - Sewon Min
     - Siva Reddy
     - Pat Verga
+  openreview_ids:
+    - ~Danqi_Chen1
+    - ~Rajarshi_Das1
+    - ~Angela_Fan2
+    - ~Sewon_Min1
+    - ~Siva_Reddy1
   duration: Half-day
   url: https://uskb-workshop.github.io/
   abstract: "<p>There has been growing interest in extracting, representing, and applying knowledge. In NLP literatures, both structured (e.g. Freebase, Wikidata) and unstructured (plain text) text have been used as knowledge sources. Knowledge from such sources plays an important role in advancing the state-of-the-art in various downstream tasks, such as question answering, generation and fact verification.</p>
@@ -75,6 +82,9 @@
     - Keith Hall
     - Yi Luan
     - Lucy Lu Wang
+  openreview_ids:
+    - ~Iz_Beltagy1
+    - ~Lucy_Lu_Wang1
   duration: Half-day
   url: https://scinlp-workshop.github.io/
   abstract: "<p>The primary goal of this half-day workshop is to bring together researchers from diverse fields who are interested in extracting and representing knowledge from scientific text, and/or applications or methods for improving access to and understanding of such knowledge. Such research includes, but is not limited to:</p>
